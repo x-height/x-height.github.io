@@ -1,53 +1,35 @@
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-a {
-	text-decoration: none;
-}
-img {
-	vertical-align: top;
-}
-input[type="button"], input[type="reset"], input[type="submit"],
-button {
-	cursor: pointer;
-}
-input[disabled], button[disabled] {
-	cursor: default;
-}
-.before::before {
-	display: block;
-	clear: both;
-	content: '';
-}
-.after::after {
-	display: block;
-	clear: both;
-	content: '';
-}
+* { margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+summary { display: list-item; }
+
+audio, video { display: inline-block; }
+
+audio:not([controls]) { display: none; height: 0; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote::before, blockquote::after, q::before, q::after { content: ''; content: none; }
+
+b, strong { font-weight: bolder; }
+
+mark { background-color: #ffc900; color: #000; }
+
+small { font-size: 80%; }
+
+sub, sup { position: relative; font-size: 50%; line-height: 0; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+a { text-decoration: none; }
+
+img { vertical-align: top; }
+
+input[type="button"], input[type="reset"], input[type="submit"], button { cursor: pointer; }
+
+input[disabled], button[disabled] { cursor: default; }
+
+.clearfix::after { content: ''; display: block; clear: both; }
