@@ -1,7 +1,6 @@
 var doc = document;
 
-var c = doc.getElementById('c'),
-    ctx = c.getContext('2d');
+var c = doc.getElementById('c'), ctx = c.getContext('2d');
 
 c.width = innerWidth;
 c.height = innerHeight;
