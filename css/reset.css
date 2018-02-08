@@ -26,6 +26,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 a { text-decoration: none; }
 
+em { font-style: normal; }
+
 img { vertical-align: top; }
 
 input[type="button"], input[type="reset"], input[type="submit"], button { cursor: pointer; }
