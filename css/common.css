@@ -14,31 +14,50 @@ header {
     line-height: 150px;
     font-size: 50px;
     font-weight: 900;
-    color: #00afa0; }
-  header nav .sign {
+    color: #00afa0;
+    transition: 0.3s; }
+  header .max .sign {
     position: absolute;
     top: 20px;
     right: 0;
     font-size: 13px; }
-  header nav ul {
+  header .max ul {
     position: absolute;
     bottom: 30px;
     right: 0; }
-    header nav ul li {
+    header .max ul li {
       float: left;
       margin-left: 20px; }
-      header nav ul li a {
+      header .max ul li a {
         padding: 10px;
         color: #333;
         border-top: 1px solid #333;
         border-bottom: 1px solid #333;
         cursor: pointer; }
-      header nav ul li a:not(.last):hover {
+      header .max ul li a:not(.last):hover {
         background-color: #eee; }
-      header nav ul li i {
+      header .max ul li i {
         margin-left: 20px; }
-      header nav ul li input {
+      header .max ul li input {
         width: 100px; }
+  header .min {
+    visibility: hidden; }
+  @media screen and (max-width: 1024px) {
+    header .max {
+      display: none; }
+    header .mini {
+      visibility: visible; } }
+  @media screen and (max-width: 320px) {
+    header {
+      height: 70px;
+      transition: 0.3s; }
+      header .headerInner {
+        height: 70px;
+        transition: 0.3s; }
+        header .headerInner .logo {
+          line-height: 70px;
+          font-size: 20px;
+          transition: 0.3s; } }
 
 .slider {
   width: 100%; }

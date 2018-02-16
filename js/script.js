@@ -29,3 +29,9 @@ $('.list a').each(function(i) {
         $('.book ul').eq(i).show();
     });
 });
+
+// var docWidth = $('html').width();
+// console.log(docWidth);
+// if (docWidth < 1024) {
+//     $('.mini').css('display', 'block');
+// }
