@@ -5,8 +5,8 @@ $primary: #00afa0;
 body { font-family: 'Roboto', sans-serif; }
 
 header {
-    position: relative; z-index: 10; width: 100%; height: 125px; background-color: #fff;
-    .headerInner { height: 125px; background-color: #fff; }
+    position: relative; z-index: 10; width: 100%; height: 125px; background-color: #fff; transition: 0.3s;
+    .headerInner { height: 125px; background-color: #fff; transition: 0.3s; }
     .logo { line-height: 150px; font-size: 50px; font-weight: 900; color: $primary; transition: 0.3s; }
     .max {
         .sign { position: absolute; top: 20px; right: 0; font-size: 13px; }
@@ -21,16 +21,24 @@ header {
             }
         }
     }
-    .min { visibility: hidden; }
+    .fa-bars { position: absolute; top: 40px; right: 0; font-size: 30px; color: $primary; cursor: pointer; }
+    .min {
+        position: absolute; top: 0; right: 0; z-index: 20; width: 60%; height: 100vh; transform: translateX(300%); background-color: rgba(20, 20, 20, 0.8); transition: 0.5s;
+        li:first-child { float: right; margin-top: 10px; color: #fff; }
+        li:hover { background-color: rgba(20, 20, 20, 0.9); }
+        a { padding: 20px; line-height: 40px; color: #fff; }
+        i { margin-left: 20px; }
+        input { background-color: transparent; }
+    }
     @media screen and (max-width: 1024px) {
         .max { display: none; }
-        .mini { visibility: visible; }
     }
     @media screen and (max-width: 640px) {
         height: 70px; transition: 0.3s;
         .headerInner {
             height: 70px; transition: 0.3s;
             .logo { line-height: 70px; font-size: 30px; transition: 0.3s; }
+            .fa-bars { top: 25px; font-size: 20px; }
         }
     }
 }
@@ -44,8 +52,8 @@ header {
 section {
     text-align: center;
     .articleInner { padding-top: 50px; padding-bottom: 50px; }
-    h2 { line-height: 50px; font-size: 45px; font-weight: 700; color: #555; }
-    h2::after { content: ''; display: block; width: 50px; margin: 20px auto; border-bottom: 2px solid #555; }
+    h2 { line-height: 50px; font-size: 45px; font-weight: 700; color: #555; transition: 0.3s; }
+    h2::after { content: ''; display: block; width: 50px; margin: 20px auto; border-bottom: 2px solid #555; transition: 0.3s; }
     .article1 {
         .articleInner { padding-top: 0; }
         background-color: #fff;
@@ -73,14 +81,14 @@ section {
         dd { margin-top: 10px; line-height: 20px; font-size: 12px; }
     }
     @media screen and (max-width: 640px) {
-        h2 { font-size: 30px; }
-        h2::after { border-bottom-width: 1px; }
+        h2 { font-size: 30px; transition: 0.3s; }
+        h2::after { border-bottom-width: 1px; transition: 0.3s; }
     }
 }
 
 footer {
     text-align: center; line-height: 16px; background-color: #333; font-size: 12px; color: #aaa;
-    .footerInner { padding-top: 20px; padding-bottom: 20px; }
+    .footerInner { max-width: 960px; padding-top: 20px; padding-bottom: 20px; }
     h3 { margin-bottom: 10px; font-size: 13px; font-weight: 700; }
     .info {
         display: flex; justify-content: space-between;
