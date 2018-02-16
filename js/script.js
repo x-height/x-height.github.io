@@ -29,8 +29,12 @@ $(window).resize(function() {
 });
 
 $('.fa-bars').on('click', function() {
-    $('.min').css({'display' : 'block', 'transform' : 'translateX(50%)'});
-})
+    $('.min').css({'transform' : 'translateX(0)'});
+});
+
+$('.first').on('click', function() {
+    $('.min').css({'transform' : 'translateX(100%)'});
+});
 
 $('.list a').each(function(i) {
     $('.list a').eq(0).css('color', '#00afa0');
