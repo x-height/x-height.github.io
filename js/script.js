@@ -19,10 +19,13 @@ $(window).on('scroll' , function() {
 });
 
 $('.list a').each(function(i) {
-    $('.book ul').siblings().hide();
+    $('.list a').eq(0).css('color', '#00afa0');
+    $('.book ul').hide();
     $('.book ul').eq(0).show();
     $(this).on('click', function() {
-        $('.book ul').siblings().hide();
+        $('.list a').css('color', '#888888');
+        $('.list a').eq(i).css('color', '#00afa0');
+        $('.book ul').hide();
         $('.book ul').eq(i).show();
     });
 });
