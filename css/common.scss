@@ -26,11 +26,11 @@ header {
         .max { display: none; }
         .mini { visibility: visible; }
     }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 640px) {
         height: 70px; transition: 0.3s;
         .headerInner {
             height: 70px; transition: 0.3s;
-            .logo { line-height: 70px; font-size: 20px; transition: 0.3s; }
+            .logo { line-height: 70px; font-size: 30px; transition: 0.3s; }
         }
     }
 }
@@ -71,6 +71,10 @@ section {
         dl { color: #555; margin-top: 20px; text-align: left; }
         dt { width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; font-weight: 700; }
         dd { margin-top: 10px; line-height: 20px; font-size: 12px; }
+    }
+    @media screen and (max-width: 640px) {
+        h2 { font-size: 30px; }
+        h2::after { border-bottom-width: 1px; }
     }
 }
 
