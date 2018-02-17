@@ -6,6 +6,23 @@ $(".bxSlider").bxSlider({
     speed: 700
 });
 
+$(".owl-carousel").owlCarousel({
+    items : 5,
+    margin : 20,
+    responsiveClass : true,
+    responsive : {
+        0 : {
+            items : 1
+        },
+        640 : {
+            items : 3
+        },
+        960 : {
+            items : 5
+        }
+    }
+});
+
 $(window).on('scroll' , function() {
     var height = $('header').height();
     var scroll = $(this).scrollTop();
@@ -20,12 +37,15 @@ $(window).on('scroll' , function() {
 
 $(window).resize(function() {
     var docWidth = $('html').width();
-    if (docWidth < 1024) {
+    if (docWidth < 1020) {
         $('.fa-bars').css('display', 'block');
     } else {
         $('.fa-bars').css('display', 'none');
         $('.min').css('display', 'none');
     }
+    // if (docWidth < 640) {
+    //     list();
+    // }
 });
 
 $('.fa-bars').on('click', function() {
@@ -47,3 +67,15 @@ $('.list a').each(function(i) {
         $('.book ul').eq(i).show();
     });
 });
+
+function list() {
+    $('.list a').hide();
+    $('.list a').eq(0).show();
+}
+
+$('.list a').each(function(i) {
+    $('.fa-chevron-left').on('click', function() {
+        console.log($('.fa-chevron-left'));
+        console.log($('.list a').eq(i + 1));
+    });
+})

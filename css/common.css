@@ -82,7 +82,7 @@ header {
       color: #fff;
       cursor: pointer; }
     header .min li:not(.first):hover {
-      background-color: rgba(20, 20, 20, 0.8); }
+      background-color: rgba(20, 20, 20, 0.5); }
     header .min a {
       padding: 30px;
       line-height: 40px;
@@ -139,6 +139,9 @@ section {
     section .article1 .book ul {
       display: flex;
       justify-content: space-between; }
+    section .article1 .book img {
+      width: auto;
+      height: 260px; }
   section .article2 {
     background-color: #ddd; }
     section .article2 h2::after {
