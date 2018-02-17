@@ -36,14 +36,14 @@ $(window).on('scroll' , function() {
 });
 
 $(window).resize(function() {
-    var docWidth = $('html').width();
-    if (docWidth < 1020) {
+    var width = $('html').width();
+    if (width < 1020) {
         $('.fa-bars').css('display', 'block');
     } else {
         $('.fa-bars').css('display', 'none');
         $('.min').css('display', 'none');
     }
-    // if (docWidth < 640) {
+    // if (width < 640) {
     //     list();
     // }
 });
@@ -58,24 +58,24 @@ $('.first').on('click', function() {
 
 $('.list a').each(function(i) {
     $('.list a').eq(0).css('color', '#00afa0');
-    $('.book ul').hide();
-    $('.book ul').eq(0).show();
+    $('.book .owl-carousel').hide();
+    $('.book .owl-carousel').eq(0).show();
     $(this).on('click', function() {
         $('.list a').css('color', '#888888');
         $('.list a').eq(i).css('color', '#00afa0');
-        $('.book ul').hide();
-        $('.book ul').eq(i).show();
+        $('.book .owl-carousel').hide();
+        $('.book .owl-carousel').eq(i).show();
     });
 });
 
-function list() {
-    $('.list a').hide();
-    $('.list a').eq(0).show();
-}
+// function list() {
+//     $('.list a').hide();
+//     $('.list a').eq(0).show();
+// }
 
-$('.list a').each(function(i) {
-    $('.fa-chevron-left').on('click', function() {
-        console.log($('.fa-chevron-left'));
-        console.log($('.list a').eq(i + 1));
-    });
-})
+// $('.list a').each(function(i) {
+//     $('.fa-chevron-left').on('click', function() {
+//         console.log($('.fa-chevron-left'));
+//         console.log($('.list a').eq(i + 1));
+//     });
+// })
