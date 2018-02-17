@@ -104,13 +104,13 @@ header {
       header .min {
         width: 50%; } }
 
-.slider {
+main {
   width: 100%; }
-  .slider .grey {
+  main .grey {
     display: flex;
     justify-content: center;
     background-color: #ddd; }
-  .slider .blue {
+  main .blue {
     display: flex;
     justify-content: center;
     background-color: #108acb; }
@@ -264,10 +264,17 @@ header.fixed {
   top: 0;
   left: 0;
   height: 80px;
-  box-shadow: 0 0 20px rgba(150, 150, 150, 0.3); }
+  box-shadow: 0 0 20px rgba(100, 100, 100, 0.3); }
   header.fixed .headerInner {
     height: 80px; }
     header.fixed .headerInner .logo {
       line-height: 80px; }
+  @media screen and (max-width: 640px) {
+    header.fixed {
+      height: 70px; }
+      header.fixed .headerInner {
+        height: 70px; }
+        header.fixed .headerInner .logo {
+          line-height: 70px; } }
 
 /*# sourceMappingURL=common.css.map */
