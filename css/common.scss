@@ -66,7 +66,7 @@ section {
         .list {
             display: flex; justify-content: space-between; max-width: 700px; margin: auto;
             a, i { line-height: 70px; color: #888; margin-bottom: 10px; cursor: pointer; }
-            a:hover, i:hover { color: $primary; }
+            a:hover { color: $primary; }
         }
         .book {
             display: flex; justify-content: space-between;
@@ -74,6 +74,8 @@ section {
         }
         @media screen and (max-width: 800px) {
             .list {
+                max-width: 200px;
+                .listLi:not(.first) { display: none; }
                 a:not(.first) { display: none; }
             }
         }

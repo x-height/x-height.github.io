@@ -146,7 +146,7 @@ section {
         color: #888;
         margin-bottom: 10px;
         cursor: pointer; }
-      section .article1 .list a:hover, section .article1 .list i:hover {
+      section .article1 .list a:hover {
         color: #00afa0; }
     section .article1 .book {
       display: flex;
@@ -156,8 +156,12 @@ section {
         height: 260px;
         margin: auto; }
     @media screen and (max-width: 800px) {
-      section .article1 .list a:not(.first) {
-        display: none; } }
+      section .article1 .list {
+        max-width: 200px; }
+        section .article1 .list .listLi:not(.first) {
+          display: none; }
+        section .article1 .list a:not(.first) {
+          display: none; } }
   section .article2 {
     background-color: #ddd; }
     section .article2 h2::after {
