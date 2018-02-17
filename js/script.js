@@ -9,17 +9,7 @@ $(".bxSlider").bxSlider({
 $(".owl-carousel").owlCarousel({
     items : 5,
     responsiveClass : true,
-    responsive : {
-        0 : {
-            items : 1
-        },
-        640 : {
-            items : 3
-        },
-        960 : {
-            items : 5
-        }
-    }
+    responsive : {0 : {items : 1}, 780 : {items : 3}, 1200 : {items : 5}}
 });
 
 $(window).on('scroll' , function() {
@@ -54,14 +44,31 @@ $('.list a').each(function(i) {
     });
 });
 
-// function list() {
-//     $('.list a').hide();
-//     $('.list a').eq(0).show();
-// }
 
-// $('.list a').each(function(i) {
-//     $('.fa-chevron-left').on('click', function() {
-//         console.log($('.fa-chevron-left'));
-//         console.log($('.list a').eq(i + 1));
-//     });
-// })
+var left = doc.querySelector('.fa-chevron-left');
+var right = doc.querySelector('.fa-chevron-right');
+var listLiA = doc.getElementsByClassName('listLiA');
+var thisList = 0;
+var lastList = listLiA.length - 1;
+
+left.addEventListener('click', function() {
+    thisList--;
+    var intervarId = setInterval(function() {
+        if (thisList <= 0) {
+            clearInterval(intervarId);
+            listLiA[thisList +1].style.color = '#888888';
+            listLiA[thisList].style.color = '#00afa0';
+        }
+    });
+});
+
+right.addEventListener('click', function() {
+    thisList++;
+    var intervarId = setInterval(function() {
+        if (thisList >= listLiA.length) {
+            clearInterval(intervarId);
+            listLiA[thisList].style.color = '#00afa0';
+            listLiA[thisList - 1].style.color = '#888888';
+        }
+    });
+});

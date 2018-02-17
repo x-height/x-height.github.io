@@ -58,20 +58,20 @@ header {
     top: 0;
     right: 0;
     z-index: 20;
-    width: 40%;
+    width: 30%;
     padding: 25px 0 15px;
     transform: translateX(100%);
     background-color: rgba(20, 20, 20, 0.8);
     transition: 0.7s; }
     header .min li:first-child {
-      margin-right: 30px;
+      margin-right: 20px;
       text-align: right;
       color: #fff;
       cursor: pointer; }
     header .min li:not(.first):hover {
       background-color: rgba(20, 20, 20, 0.5); }
     header .min a {
-      padding: 30px;
+      padding: 30px 20px;
       line-height: 40px;
       color: #fff; }
     header .min i {
@@ -102,7 +102,7 @@ header {
       header .max {
         display: none; }
       header .min {
-        width: 60%; } }
+        width: 50%; } }
 
 .slider {
   width: 100%; }
@@ -209,7 +209,7 @@ footer {
     max-width: 960px;
     padding: 20px 0; }
   footer h3 {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     font-size: 13px;
     font-weight: 700; }
   footer .info {
