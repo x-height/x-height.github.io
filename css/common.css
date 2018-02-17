@@ -1,6 +1,9 @@
 body {
   font-family: 'Roboto', sans-serif; }
 
+.container {
+  overflow: hidden; }
+
 header {
   position: relative;
   z-index: 10;
@@ -46,32 +49,16 @@ header {
     position: absolute;
     top: 40px;
     right: 0;
+    display: none;
     font-size: 30px;
     color: #00afa0;
     cursor: pointer; }
-  @media screen and (max-width: 1024px) {
-    header .max {
-      display: none; } }
-  @media screen and (max-width: 640px) {
-    header {
-      height: 70px;
-      transition: 0.3s; }
-      header .headerInner {
-        height: 70px;
-        transition: 0.3s; }
-        header .headerInner .logo {
-          line-height: 70px;
-          font-size: 30px;
-          transition: 0.3s; }
-        header .headerInner .fa-bars {
-          top: 25px;
-          font-size: 20px; } }
   header .min {
     position: absolute;
     top: 0;
     right: 0;
     z-index: 20;
-    width: 60%;
+    width: 40%;
     padding: 25px 0 15px;
     transform: translateX(100%);
     background-color: rgba(20, 20, 20, 0.8);
@@ -91,6 +78,27 @@ header {
       margin-left: 20px; }
     header .min input {
       background-color: transparent; }
+  @media screen and (min-width: 641px) and (max-width: 1024px) {
+    header .max {
+      display: none; } }
+  @media screen and (max-width: 640px) {
+    header {
+      height: 70px;
+      transition: 0.3s; }
+      header .headerInner {
+        height: 70px;
+        transition: 0.3s; }
+        header .headerInner .logo {
+          line-height: 70px;
+          font-size: 30px;
+          transition: 0.3s; }
+        header .headerInner .fa-bars {
+          top: 25px;
+          font-size: 20px; }
+      header .max {
+        display: none; }
+      header .min {
+        width: 60%; } }
 
 .slider {
   width: 100%; }

@@ -41,7 +41,6 @@ $(window).resize(function() {
         $('.fa-bars').css('display', 'block');
     } else {
         $('.fa-bars').css('display', 'none');
-        $('.min').css('display', 'none');
     }
     // if (width < 640) {
     //     list();
