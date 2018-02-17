@@ -76,7 +76,6 @@ section {
             .list {
                 max-width: 200px;
                 .listLi:not(.first) { display: none; }
-                a:not(.first) { display: none; }
             }
         }
     }

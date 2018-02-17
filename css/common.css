@@ -159,8 +159,6 @@ section {
       section .article1 .list {
         max-width: 200px; }
         section .article1 .list .listLi:not(.first) {
-          display: none; }
-        section .article1 .list a:not(.first) {
           display: none; } }
   section .article2 {
     background-color: #ddd; }
