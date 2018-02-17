@@ -34,16 +34,24 @@ $(window).on('scroll' , function() {
     }
 });
 
+var width = $('html').width();
+
 $(window).resize(function() {
-    var width = $('html').width();
     if (width < 1020) {
         $('.fa-bars').css('display', 'block');
     } else {
         $('.fa-bars').css('display', 'none');
     }
-    // if (width < 640) {
-    //     list();
-    // }
+});
+
+$(window).resize(function() {
+    if (width < 800) {
+        $('.list a').hide();
+        $('.list a').eq(0).show();
+        console.log($('.list a').eq(0));
+    } else {
+        $('.list a').show();
+    }
 });
 
 $('.fa-bars').on('click', function() {
