@@ -144,12 +144,13 @@ section {
         cursor: pointer; }
       section .article1 .list a:hover, section .article1 .list i:hover {
         color: #00afa0; }
-    section .article1 .book ul {
+    section .article1 .book {
       display: flex;
       justify-content: space-between; }
-    section .article1 .book img {
-      width: auto;
-      height: 260px; }
+      section .article1 .book img {
+        width: auto;
+        height: 260px;
+        margin: auto; }
   section .article2 {
     background-color: #ddd; }
     section .article2 h2::after {

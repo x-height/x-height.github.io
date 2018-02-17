@@ -67,8 +67,8 @@ section {
             a:hover, i:hover { color: $primary; }
         }
         .book {
-            ul { display: flex; justify-content: space-between; }
-            img { width: auto; height: 260px; }
+            display: flex; justify-content: space-between;
+            img { width: auto; height: 260px; margin: auto; }
         }
     }
     .article2 {

@@ -8,7 +8,6 @@ $(".bxSlider").bxSlider({
 
 $(".owl-carousel").owlCarousel({
     items : 5,
-    margin : 20,
     responsiveClass : true,
     responsive : {
         0 : {
