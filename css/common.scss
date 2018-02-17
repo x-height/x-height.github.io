@@ -32,7 +32,9 @@ header {
         i { margin-left: 20px; }
         input { background-color: transparent; }
     }
-    @media screen and (min-width: 641px) and (max-width: 1024px) {
+    .fa-bars { display: none; }
+    @media screen and (max-width: 1024px) {
+        .fa-bars { display: block; }
         .max { display: none; }
     }
     @media screen and (max-width: 640px) {
@@ -69,6 +71,11 @@ section {
         .book {
             display: flex; justify-content: space-between;
             img { width: auto; height: 260px; margin: auto; }
+        }
+        @media screen and (max-width: 800px) {
+            .list {
+                a:not(.first) { display: none; }
+            }
         }
     }
     .article2 {

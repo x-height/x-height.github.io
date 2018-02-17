@@ -78,7 +78,11 @@ header {
       margin-left: 20px; }
     header .min input {
       background-color: transparent; }
-  @media screen and (min-width: 641px) and (max-width: 1024px) {
+  header .fa-bars {
+    display: none; }
+  @media screen and (max-width: 1024px) {
+    header .fa-bars {
+      display: block; }
     header .max {
       display: none; } }
   @media screen and (max-width: 640px) {
@@ -151,6 +155,9 @@ section {
         width: auto;
         height: 260px;
         margin: auto; }
+    @media screen and (max-width: 800px) {
+      section .article1 .list a:not(.first) {
+        display: none; } }
   section .article2 {
     background-color: #ddd; }
     section .article2 h2::after {
