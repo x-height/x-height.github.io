@@ -26,6 +26,7 @@ $(window).on('scroll' , function() {
 
 $(window).on('resize', function() {
     var width = $(window).width();
+    console.log(width);
     if (width < 640) {
         $('.posLeft').css('display', 'block');
         $('.posRight').css('display', 'block');
@@ -87,8 +88,13 @@ right.addEventListener('click', function() {
         });
     }
 });
+
 $('dt').each(function(i) {
     $(this).on('click', function() {
+        $(this).toggleClass('on');
         $('dd').eq(i).slideToggle();
+        $('.posLeft img').hide();
+        $('.posLeft img').eq(i).show();
     })
 });
+

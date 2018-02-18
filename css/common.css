@@ -171,9 +171,8 @@ section {
     background-color: #fff; }
     section .article3 h2::after {
       margin-bottom: 50px; }
-    section .article3 .posLeft, section .article3 .posRight {
-      display: inline-block; }
     section .article3 .posLeft {
+      display: inline-block;
       width: 300px;
       vertical-align: top; }
       section .article3 .posLeft img {
@@ -182,7 +181,9 @@ section {
       section .article3 .posLeft img:not(:first-of-type) {
         display: none; }
     section .article3 .posRight {
+      display: inline-block;
       max-width: 540px;
+      margin-top: 5px;
       margin-left: 100px;
       vertical-align: top; }
       section .article3 .posRight dl {
@@ -191,15 +192,16 @@ section {
         border-bottom: 1px solid #aaa; }
         section .article3 .posRight dl dt {
           padding: 10px;
-          width: 540px;
+          max-width: 540px;
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
-          word-wrap: normal;
           font-weight: 700;
           cursor: pointer;
           box-sizing: border-box; }
         section .article3 .posRight dl dt:hover {
+          background-color: #eee; }
+        section .article3 .posRight dl dt.on {
           background-color: #eee; }
         section .article3 .posRight dl dd {
           display: none;
