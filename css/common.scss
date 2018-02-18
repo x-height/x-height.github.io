@@ -87,11 +87,32 @@ section {
     .article3 {
         background-color: #fff;
         h2::after { margin-bottom: 50px; }
-        .cover { height: 200px; }
-        img { width: 200px; height: auto; }
-        dl { color: #555; margin-top: 20px; text-align: left; }
-        dt { width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; font-weight: 700; }
-        dd { margin-top: 10px; line-height: 20px; font-size: 12px; }
+        .posLeft, .posRight { display: inline-block; }
+        .posLeft {
+            width: 300px; vertical-align: top;
+            img { width: 300px; height: auto; }
+            img:not(:first-of-type) { display: none; }
+        }
+        .posRight {
+            max-width: 540px; margin-left: 100px; vertical-align: top;
+            dl {
+                color: #555; text-align: left; border-bottom: 1px solid #aaa;
+                dt { padding: 10px; width: 540px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; font-weight: 700; cursor: pointer; box-sizing: border-box; }
+                dt:hover { background-color: #eee; }
+                dd { display: none; padding: 10px; line-height: 20px; font-size: 12px; }
+            }
+            dl:first-child { border-top: 2px solid #aaa; }
+        }
+        @media screen and (max-width: 640px) {
+            .posLeft { margin: auto; }
+            .posRight {
+                margin-left: 0; width: 300px; margin: auto;
+                dl {
+                    dt { width: 300px; }
+                }
+                dl:first-child { margin-top: 25px; }
+            }
+        }
     }
     @media screen and (max-width: 640px) {
         h2 { font-size: 30px; transition: 0.3s; }

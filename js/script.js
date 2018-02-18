@@ -9,7 +9,7 @@ $(".bxSlider").bxSlider({
 $(".owl-carousel").owlCarousel({
     items : 5,
     responsiveClass : true,
-    responsive : {0 : {items : 1}, 780 : {items : 3}, 1200 : {items : 5}}
+    responsive : { 0 : { items : 1 }, 780 : { items : 3 }, 1200 : { items : 5 } }
 });
 
 $(window).on('scroll' , function() {
@@ -21,6 +21,14 @@ $(window).on('scroll' , function() {
     } else {
         $('header').removeClass('fixed');
         $('.sign').show();
+    }
+});
+
+$(window).on('resize', function() {
+    var width = $(window).width();
+    if (width < 640) {
+        $('.posLeft').css('display', 'block');
+        $('.posRight').css('display', 'block');
     }
 });
 
@@ -50,25 +58,37 @@ var right = doc.querySelector('.fa-chevron-right');
 var listLiA = doc.getElementsByClassName('listLiA');
 var thisList = 0;
 var lastList = listLiA.length - 1;
+console.log(listLiA);
 
-left.addEventListener('click', function() {
-    thisList--;
-    var intervarId = setInterval(function() {
-        if (thisList <= 0) {
-            clearInterval(intervarId);
-            listLiA[thisList +1].style.color = '#888888';
-            listLiA[thisList].style.color = '#00afa0';
-        }
-    });
-});
+// left.addEventListener('click', function() {
+//     thisList--;
+//     var intervarId = setInterval(function() {
+//         if (thisList <= 0) {
+//             clearInterval(intervarId);
+//             listLiA[thisList +1].style.color = '#888888';
+//             listLiA[thisList].style.color = '#00afa0';
+//         }
+//     });
+// });
 
 right.addEventListener('click', function() {
     thisList++;
-    var intervarId = setInterval(function() {
-        if (thisList >= listLiA.length) {
+    if (thisList > lastList) {
+        var intervarId = setInterval(function() {
+            clearInterval(intervarId);
+            listLiA[0].style.color = '#00afa0';
+            listLiA[lastList].style.color = '#888888';
+        });
+    } else {
+        var intervarId = setInterval(function() {
             clearInterval(intervarId);
             listLiA[thisList].style.color = '#00afa0';
             listLiA[thisList - 1].style.color = '#888888';
-        }
-    });
+        });
+    }
+});
+$('dt').each(function(i) {
+    $(this).on('click', function() {
+        $('dd').eq(i).slideToggle();
+    })
 });
