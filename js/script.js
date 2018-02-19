@@ -30,6 +30,9 @@ $(window).on('resize', function() {
     if (width < 640) {
         $('.posLeft').css('display', 'block');
         $('.posRight').css('display', 'block');
+    } else {
+        $('.posLeft').css('display', 'inline-block');
+        $('.posRight').css('display', 'inline-block');
     }
 });
 
@@ -95,6 +98,6 @@ $('dt').each(function(i) {
         $('dd').eq(i).slideToggle();
         $('.posLeft img').hide();
         $('.posLeft img').eq(i).show();
-    })
+    });
 });
 
