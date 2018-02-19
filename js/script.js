@@ -101,3 +101,10 @@ $('dt').each(function(i) {
     });
 });
 
+$('ul.item li button').each(function(i) {
+    console.log($('item li button'));
+    $(this).on('click', function() {
+        $('div.none').hide();
+        $('div.none').eq(i).show();
+    });
+});

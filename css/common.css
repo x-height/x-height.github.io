@@ -185,6 +185,14 @@ section {
           height: 34px;
           background-color: #fff;
           border-radius: 50%; }
+    section .article2 .none {
+      display: none; }
+    section .article2 .none::before {
+      content: '';
+      display: block;
+      width: 100px;
+      margin: 60px auto 30px;
+      border-top: 1px solid #555; }
   section .article3 {
     background-color: #fff; }
     section .article3 h2::after {

@@ -90,6 +90,8 @@ section {
                 button { position: absolute; left: calc(50% - 17px); bottom: 0; transform: translateY(50%); display: inline-block; width: 34px; height: 34px; background-color: #fff; border-radius: 50%; }
             }
         }
+        .none { display: none; }
+        .none::before { content: ''; display: block; width: 100px; margin: 60px auto 30px; border-top: 1px solid #555; }
     }
     .article3 {
         background-color: #fff;
