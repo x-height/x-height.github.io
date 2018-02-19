@@ -28,11 +28,11 @@ $(window).on('resize', function() {
     var width = $(window).width();
     console.log(width);
     if (width < 640) {
-        $('.posLeft').css('display', 'block');
-        $('.posRight').css('display', 'block');
+        $('div.posLeft').css('display', 'block');
+        $('div.posRight').css('display', 'block');
     } else {
-        $('.posLeft').css('display', 'inline-block');
-        $('.posRight').css('display', 'inline-block');
+        $('div.posLeft').css('display', 'inline-block');
+        $('div.posRight').css('display', 'inline-block');
     }
 });
 
@@ -96,8 +96,8 @@ $('dt').each(function(i) {
     $(this).on('click', function() {
         $(this).toggleClass('on');
         $('dd').eq(i).slideToggle();
-        $('.posLeft img').hide();
-        $('.posLeft img').eq(i).show();
+        $('div.posLeft img').hide();
+        $('div.posLeft img').eq(i).show();
     });
 });
 
