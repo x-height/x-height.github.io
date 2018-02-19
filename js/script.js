@@ -3,8 +3,7 @@ var doc = document;
 $(".bxSlider").bxSlider({
     auto : true,
     pager : false,
-    speed : 700,
-    responsive : false
+    speed : 700
 });
 
 $(".owl-carousel").owlCarousel({
@@ -27,7 +26,6 @@ $(window).on('scroll' , function() {
 
 $(window).on('resize', function() {
     var width = $(window).width();
-    console.log(width);
     if (width < 640) {
         $('div.posLeft').css('display', 'block');
         $('div.posRight').css('display', 'block');

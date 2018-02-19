@@ -105,7 +105,8 @@ header {
         width: 50%; } }
 
 main {
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
   main .grey {
     display: flex;
     justify-content: center;
@@ -114,6 +115,9 @@ main {
     display: flex;
     justify-content: center;
     background-color: #108acb; }
+  main img {
+    min-width: 1140px;
+    margin: auto; }
 
 section {
   text-align: center; }
