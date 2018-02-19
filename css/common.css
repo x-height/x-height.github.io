@@ -173,7 +173,7 @@ section {
           width: 200px;
           height: auto;
           border: 5px solid #fff;
-          outline: 1px solid #bbb;
+          box-sizing: border-box;
           box-shadow: 0 0 20px rgba(100, 100, 100, 0.3); }
         section .article2 .item .info button {
           position: absolute;
@@ -197,7 +197,7 @@ section {
         max-width: 300px;
         height: auto;
         border: 5px solid #fff;
-        outline: 1px solid #bbb;
+        box-sizing: border-box;
         box-shadow: 0 0 20px rgba(100, 100, 100, 0.3); }
       section .article3 .posLeft img:not(:first-of-type) {
         display: none; }
@@ -209,8 +209,7 @@ section {
       section .article3 .posRight dl {
         color: #555;
         text-align: left;
-        border-top: 2px solid #aaa;
-        border-bottom: 2px solid #aaa; }
+        border-bottom: 1px solid #aaa; }
         section .article3 .posRight dl dt {
           padding: 10px;
           max-width: 540px;
@@ -228,7 +227,7 @@ section {
           display: none;
           padding: 10px;
           line-height: 20px;
-          font-size: 14px; }
+          font-size: 13px; }
     @media screen and (max-width: 640px) {
       section .article3 .posLeft {
         margin: auto; }
