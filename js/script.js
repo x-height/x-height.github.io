@@ -3,7 +3,8 @@ var doc = document;
 $(".bxSlider").bxSlider({
     auto : true,
     pager : false,
-    speed: 700
+    speed : 700,
+    responsive : false
 });
 
 $(".owl-carousel").owlCarousel({
