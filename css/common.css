@@ -111,17 +111,17 @@ header {
 
 main {
   width: 100%; }
-  main .grey {
+  main .bxSlider .grey {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 500px;
+    height: 600px;
     background-color: #ddd; }
-  main .blue {
+  main .bxSlider .blue {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 500px;
+    height: 600px;
     background-color: #108acb; }
 
 section {

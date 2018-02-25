@@ -55,8 +55,10 @@ header {
 
 main {
     width: 100%;
-    .grey { display: flex; justify-content: center; align-items: flex-end; height: 500px; background-color: #ddd; }
-    .blue { display: flex; justify-content: center; align-items: flex-end; height: 500px; background-color: #108acb; }
+    .bxSlider {
+        .grey { display: flex; justify-content: center; align-items: flex-end; height: 600px; background-color: #ddd; }
+        .blue { display: flex; justify-content: center; align-items: flex-end; height: 600px; background-color: #108acb; }
+    }
 }
 
 section {
