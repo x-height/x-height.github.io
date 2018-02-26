@@ -110,6 +110,8 @@ header {
   header .fa-bars {
     display: none; }
   @media screen and (max-width: 1024px) {
+    header .logo {
+      line-height: 83px; }
     header .fa-bars {
       display: block;
       top: 25px; }
@@ -123,7 +125,7 @@ header {
         height: 70px;
         transition: 0.3s; }
         header .headerInner .logo {
-          line-height: 70px;
+          line-height: 73px;
           font-size: 30px;
           transition: 0.3s; }
         header .headerInner .fa-bars {
@@ -222,16 +224,15 @@ section {
     section .article2 .item {
       display: flex;
       justify-content: space-between; }
-      section .article2 .item li {
-        text-align: left; }
       section .article2 .item li::before {
         display: block;
         font-size: 40px;
         color: #00afa0;
-        transform: translateY(18px); }
+        transform: translateY(15px); }
       section .article2 .item li:nth-child(1)::before {
         content: '01';
-        font-size: 50px; }
+        font-size: 50px;
+        transform: translateY(18px); }
       section .article2 .item li:nth-child(2)::before {
         content: '02'; }
       section .article2 .item li:nth-child(3)::before {
@@ -240,21 +241,40 @@ section {
         content: '04'; }
       section .article2 .item li:nth-child(5)::before {
         content: '05'; }
-      section .article2 .item h3 {
-        position: relative;
-        z-index: 10;
-        background-color: #ddd;
-        padding: 5px;
-        font-size: 17px; }
-      section .article2 .item .best {
-        width: 150px;
-        height: 205px;
-        margin: 5px;
-        background-color: #fff;
-        box-sizing: border-box; }
-      section .article2 .item .best.first {
-        width: 210px;
-        height: 287px; }
+      section .article2 .item li {
+        text-align: left; }
+        section .article2 .item li h3 {
+          position: relative;
+          z-index: 10;
+          background-color: #ddd;
+          padding: 5px;
+          font-size: 17px; }
+        section .article2 .item li .best {
+          width: 150px;
+          height: 205px;
+          margin: 5px;
+          background-color: #fff;
+          box-sizing: border-box; }
+        section .article2 .item li .best.first {
+          width: 210px;
+          height: 287px;
+          transition: 0.3s; }
+    @media screen and (max-width: 640px) {
+      section .article2 .item li:nth-child(1) {
+        width: 100%; }
+      section .article2 .item li:nth-child(2) {
+        width: 50%; }
+      section .article2 .item li:nth-child(3) {
+        width: 50%; }
+      section .article2 .item li:nth-child(4) {
+        width: 50%; }
+      section .article2 .item li:nth-child(5) {
+        width: 50%; }
+      section .article2 .item li {
+        display: block; }
+        section .article2 .item li .best.first {
+          width: 150px;
+          height: 205px; } }
   section .article3 {
     background-color: #fff; }
     section .article3 h2::after {

@@ -48,6 +48,7 @@ header {
     }
     .fa-bars { display: none; }
     @media screen and (max-width: 1024px) {
+        .logo { line-height: 83px; }
         .fa-bars { display: block; top: 25px; }
         .max { display: none; }
     }
@@ -55,7 +56,7 @@ header {
         height: 70px; transition: 0.3s;
         .headerInner {
             height: 70px; transition: 0.3s;
-            .logo { line-height: 70px; font-size: 30px; transition: 0.3s; }
+            .logo { line-height: 73px; font-size: 30px; transition: 0.3s; }
             .fa-bars { top: 25px; font-size: 20px; }
         }
         .max { display: none; }
@@ -119,16 +120,31 @@ section {
         h2::after { margin-bottom: 50px; }
         .item {
             display: flex; justify-content: space-between;
-            li { text-align: left; }
-            li::before { display: block; font-size: 40px; color: $primary; transform: translateY(18px); }
-            li:nth-child(1)::before { content: '01'; font-size: 50px; }
+            li::before { display: block; font-size: 40px; color: $primary; transform: translateY(15px); }
+            li:nth-child(1)::before { content: '01'; font-size: 50px; transform: translateY(18px); }
             li:nth-child(2)::before { content: '02'; }
             li:nth-child(3)::before { content: '03'; }
             li:nth-child(4)::before { content: '04'; }
             li:nth-child(5)::before { content: '05'; }
-            h3 { position: relative; z-index: 10; background-color: #ddd; padding: 5px; font-size: 17px; }
-            .best { width: 150px; height: 205px; margin: 5px; background-color: #fff; box-sizing: border-box; }
-            .best.first { width: 210px; height: 287px; }
+            li {
+                text-align: left;
+                h3 { position: relative; z-index: 10; background-color: #ddd; padding: 5px; font-size: 17px; }
+                .best { width: 150px; height: 205px; margin: 5px; background-color: #fff; box-sizing: border-box; }
+                .best.first { width: 210px; height: 287px; transition: 0.3s; }
+            }
+        }
+        @media screen and (max-width: 640px) {
+            .item {
+                li:nth-child(1) { width: 100%; }
+                li:nth-child(2) { width: 50%; }
+                li:nth-child(3) { width: 50%; }
+                li:nth-child(4) { width: 50%; }
+                li:nth-child(5) { width: 50%; }
+                li {
+                    display: block;
+                    .best.first { width: 150px; height: 205px; }
+                }
+            }
         }
     }
     .article3 {
