@@ -80,7 +80,7 @@ section {
         }
         .book {
             display: flex; justify-content: space-between;
-            img { width: auto; height: 260px; margin: auto; }
+            img { width: auto; height: 205px; margin: auto; }
         }
         @media screen and (max-width: 800px) {
             .list {
@@ -105,8 +105,6 @@ section {
             .best { width: 150px; height: 205px; margin: 5px; background-color: #fff; box-sizing: border-box; }
             .best.first { width: 210px; height: 287px; }
         }
-        .none { display: none; }
-        .none::before { content: ''; display: block; width: 100px; margin: 60px auto 30px; border-top: 1px solid #555; }
     }
     .article3 {
         background-color: #fff;

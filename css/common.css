@@ -127,9 +127,9 @@ main {
     background-color: #108acb; }
   @media screen and (max-width: 640px) {
     main .bxSlider .grey {
-      height: 300px; }
+      height: 200px; }
     main .bxSlider .blue {
-      height: 300px; } }
+      height: 200px; } }
 
 section {
   text-align: center; }
@@ -169,7 +169,7 @@ section {
       justify-content: space-between; }
       section .article1 .book img {
         width: auto;
-        height: 260px;
+        height: 205px;
         margin: auto; }
     @media screen and (max-width: 800px) {
       section .article1 .list {
@@ -217,14 +217,6 @@ section {
       section .article2 .item .best.first {
         width: 210px;
         height: 287px; }
-    section .article2 .none {
-      display: none; }
-    section .article2 .none::before {
-      content: '';
-      display: block;
-      width: 100px;
-      margin: 60px auto 30px;
-      border-top: 1px solid #555; }
   section .article3 {
     background-color: #fff; }
     section .article3 h2::after {
@@ -333,6 +325,6 @@ header.fixed {
       header.fixed .headerInner {
         height: 70px; }
         header.fixed .headerInner .logo {
-          line-height: 70px; } }
+          line-height: 75px; } }
 
 /*# sourceMappingURL=common.css.map */
