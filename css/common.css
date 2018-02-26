@@ -45,31 +45,33 @@ header {
       header nav.max ul.menu1 li a:not(.last):hover {
         background-color: rgba(0, 0, 0, 0.1); }
       header nav.max ul.menu1 li i {
-        margin-left: 80px; }
+        margin-left: 70px;
+        margin-right: 10px; }
       header nav.max ul.menu1 li i.last {
-        margin-left: 20px; }
+        margin-left: 20px;
+        margin-right: 0; }
       header nav.max ul.menu1 li input {
         width: 150px;
         background-color: transparent;
         color: #fff; }
-    header nav.max ul.menu1 ul.menu2 {
-      position: absolute;
-      top: 49px;
-      display: flex;
-      flex-flow: column;
-      background-color: #fff;
-      box-shadow: 0 0 20px rgba(100, 100, 100, 0.3);
-      visibility: hidden; }
-      header nav.max ul.menu1 ul.menu2 li {
-        margin-left: 0; }
-        header nav.max ul.menu1 ul.menu2 li a {
-          line-height: 39px;
-          border: 0;
-          font-size: 14px;
-          color: #555; }
-        header nav.max ul.menu1 ul.menu2 li a:hover {
-          background-color: transparent;
-          color: #00afa0; }
+      header nav.max ul.menu1 li ul.menu2 {
+        position: absolute;
+        top: 49px;
+        display: flex;
+        flex-flow: column;
+        background-color: #fff;
+        box-shadow: 0 0 20px rgba(100, 100, 100, 0.3);
+        visibility: hidden; }
+        header nav.max ul.menu1 li ul.menu2 li {
+          margin-left: 0; }
+          header nav.max ul.menu1 li ul.menu2 li a {
+            line-height: 39px;
+            border: 0;
+            font-size: 14px;
+            color: #555; }
+          header nav.max ul.menu1 li ul.menu2 li a:hover {
+            background-color: transparent;
+            color: #00afa0; }
     header nav.max ul.menu1 ul.menu2.on {
       visibility: visible; }
   header .fa-bars {
@@ -133,9 +135,6 @@ header {
         width: 50%; } }
 
 header.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
   height: 80px;
   background-color: #00afa0;
   box-shadow: 0 0 20px rgba(100, 100, 100, 0.3); }
