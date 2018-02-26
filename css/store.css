@@ -170,19 +170,6 @@ nav.lnb {
 
 section .articleInner {
   padding: 50px 0; }
-section h2 {
-  line-height: 50px;
-  font-size: 45px;
-  font-weight: 700;
-  color: #555;
-  transition: 0.3s; }
-section h2::after {
-  content: '';
-  display: block;
-  width: 50px;
-  margin: 20px auto;
-  border-bottom: 1px solid #555;
-  transition: 0.3s; }
 section .article1 {
   background-color: #fff; }
   section .article1 .articleInner {
@@ -201,16 +188,12 @@ section .article1 {
       color: #00afa0; }
   section .article1 .book {
     display: flex;
-    justify-content: space-between; }
-    section .article1 .book img {
-      width: auto;
+    justify-content: space-between;
+    margin: 20px; }
+    section .article1 .book .img {
+      width: 150px;
       height: 205px;
-      margin: auto; }
-  @media screen and (max-width: 800px) {
-    section .article1 .list {
-      max-width: 200px; }
-      section .article1 .list .listLi:not(.first) {
-        display: none; } }
+      background-color: #eee; }
 
 footer {
   text-align: center;

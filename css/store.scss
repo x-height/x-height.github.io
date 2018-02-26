@@ -91,8 +91,6 @@ nav.lnb {
 
 section {
     .articleInner { padding: 50px 0; }
-    h2 { line-height: 50px; font-size: 45px; font-weight: 700; color: #555; transition: 0.3s; }
-    h2::after { content: ''; display: block; width: 50px; margin: 20px auto; border-bottom: 1px solid #555; transition: 0.3s; }
     .article1 {
         .articleInner { padding-top: 0; }
         background-color: #fff;
@@ -102,14 +100,8 @@ section {
             a:hover { color: $primary; }
         }
         .book {
-            display: flex; justify-content: space-between;
-            img { width: auto; height: 205px; margin: auto; }
-        }
-        @media screen and (max-width: 800px) {
-            .list {
-                max-width: 200px;
-                .listLi:not(.first) { display: none; }
-            }
+            display: flex; justify-content: space-between; margin: 20px;
+            .img { width: 150px; height: 205px; background-color: #eee; }
         }
     }
 }
