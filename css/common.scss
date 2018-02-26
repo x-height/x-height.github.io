@@ -15,15 +15,22 @@ header {
     }
     .max {
         .sign { position: absolute; top: 20px; right: 0; font-size: 13px; color: #fff; }
-        ul {
+        ul.menu1 {
             position: absolute; bottom: 30px; right: 0;
             li {
                 float: left; margin-left: 20px;
                 a { padding: 10px; color: #fff; border-top: 1px solid #fff; border-bottom: 1px solid #fff; cursor: pointer; }
                 a:not(.last):hover { background-color: rgba(0, 0, 0, 0.1); }
                 i { margin-left: 60px; }
-                i:last-child { margin-left: 20px; }
+                i.last { margin-left: 20px; }
                 input { width: 150px; background-color: transparent; color: #fff; }
+            }
+            ul.menu2 {
+                position: absolute; top: 0; display: flex; flex-flow: column;
+                li {
+                    margin-left: 0; border: 0; 
+                    a { line-height: 39px; font-size: 14px; }
+                }
             }
         }
     }
@@ -33,7 +40,7 @@ header {
         li:first-child { margin-right: 20px; text-align: right; color: #fff; cursor: pointer; }
         li:not(.first):hover { background-color: rgba(20, 20, 20, 0.5); }
         a { padding: 30px 20px; line-height: 40px; color: #fff; }
-        i { margin-left: 20px; }
+        i { margin-left: 60px; }
         input { background-color: transparent; }
     }
     .fa-bars { display: none; }
@@ -71,11 +78,11 @@ header.fixed {
 main {
     width: 100%;
     .bxSlider {
-        .grey { display: flex; justify-content: center; align-items: flex-end; height: 600px; background-color: #ddd; }
-        .blue { display: flex; justify-content: center; align-items: flex-end; height: 600px; background-color: #108acb; }
+        .slide1 { display: flex; justify-content: center; align-items: flex-end; height: 600px; background-color: #ddd; }
+        .slide2 { display: flex; justify-content: center; align-items: flex-end; height: 600px; background-color: #108acb; }
         @media screen and (max-width: 640px) {
-            .grey { height: 200px; }
-            .blue { height: 200px; }
+            .slide1 { height: 200px; }
+            .slide2 { height: 200px; }
         }
     }
 }
@@ -110,8 +117,8 @@ section {
         .item {
             display: flex; justify-content: space-between;
             li { text-align: left; }
-            li::before { display: block; font-size: 40px; color: $primary; transform: translate(-22px, 18px); }
-            li:nth-child(1)::before { content: '01'; font-size: 50px; transform: translate(-28px, 18px); }
+            li::before { display: block; font-size: 40px; color: $primary; transform: translateY(18px); }
+            li:nth-child(1)::before { content: '01'; font-size: 50px; }
             li:nth-child(2)::before { content: '02'; }
             li:nth-child(3)::before { content: '03'; }
             li:nth-child(4)::before { content: '04'; }

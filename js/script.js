@@ -32,12 +32,16 @@ $(window).on('resize', function() {
     }
 });
 
-$('.fa-bars').on('click', function() {
-    $('.min').css({'transform' : 'translateX(0)'});
+$('ul.menu1 > li > a').each(function(i) {
+    $('ul.menu2').eq(i).css('width', $('ul.menu1 > li > a').eq(i).width() + 'px');
 });
 
-$('.first').on('click', function() {
-    $('.min').css({'transform' : 'translateX(100%)'});
+$('.fa-bars').on('click', function() {
+    $('.min').css('transform', 'translateX(0)');
+});
+
+$('.fa-times').on('click', function() {
+    $('nav.min').css('transform', 'translateX(100%)');
 });
 
 $('.list a').each(function(i) {

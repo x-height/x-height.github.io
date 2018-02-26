@@ -29,29 +29,40 @@ header {
     right: 0;
     font-size: 13px;
     color: #fff; }
-  header .max ul {
+  header .max ul.menu1 {
     position: absolute;
     bottom: 30px;
     right: 0; }
-    header .max ul li {
+    header .max ul.menu1 li {
       float: left;
       margin-left: 20px; }
-      header .max ul li a {
+      header .max ul.menu1 li a {
         padding: 10px;
         color: #fff;
         border-top: 1px solid #fff;
         border-bottom: 1px solid #fff;
         cursor: pointer; }
-      header .max ul li a:not(.last):hover {
+      header .max ul.menu1 li a:not(.last):hover {
         background-color: rgba(0, 0, 0, 0.1); }
-      header .max ul li i {
+      header .max ul.menu1 li i {
         margin-left: 60px; }
-      header .max ul li i:last-child {
+      header .max ul.menu1 li i.last {
         margin-left: 20px; }
-      header .max ul li input {
+      header .max ul.menu1 li input {
         width: 150px;
         background-color: transparent;
         color: #fff; }
+    header .max ul.menu1 ul.menu2 {
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-flow: column; }
+      header .max ul.menu1 ul.menu2 li {
+        margin-left: 0;
+        border: 0; }
+        header .max ul.menu1 ul.menu2 li a {
+          line-height: 39px;
+          font-size: 14px; }
   header .fa-bars {
     position: absolute;
     top: 40px;
@@ -82,7 +93,7 @@ header {
       line-height: 40px;
       color: #fff; }
     header .min i {
-      margin-left: 20px; }
+      margin-left: 60px; }
     header .min input {
       background-color: transparent; }
   header .fa-bars {
@@ -133,22 +144,22 @@ header.fixed {
 
 main {
   width: 100%; }
-  main .bxSlider .grey {
+  main .bxSlider .slide1 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     height: 600px;
     background-color: #ddd; }
-  main .bxSlider .blue {
+  main .bxSlider .slide2 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     height: 600px;
     background-color: #108acb; }
   @media screen and (max-width: 640px) {
-    main .bxSlider .grey {
+    main .bxSlider .slide1 {
       height: 200px; }
-    main .bxSlider .blue {
+    main .bxSlider .slide2 {
       height: 200px; } }
 
 section {
@@ -209,11 +220,10 @@ section {
         display: block;
         font-size: 40px;
         color: #00afa0;
-        transform: translate(-22px, 18px); }
+        transform: translateY(18px); }
       section .article2 .item li:nth-child(1)::before {
         content: '01';
-        font-size: 50px;
-        transform: translate(-28px, 18px); }
+        font-size: 50px; }
       section .article2 .item li:nth-child(2)::before {
         content: '02'; }
       section .article2 .item li:nth-child(3)::before {
