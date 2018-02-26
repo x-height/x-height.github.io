@@ -22,7 +22,7 @@ header {
                 a { padding: 10px; color: #333; border-top: 1px solid #333; border-bottom: 1px solid #333; cursor: pointer; }
                 a:not(.last):hover { background-color: rgba(0, 0, 0, 0.1); }
                 i { margin-left: 60px; }
-                i.last { margin-left: 20px; }
+                i:last-child { margin-left: 20px; }
                 input { width: 150px; background-color: transparent; }
             }
         }
@@ -94,11 +94,16 @@ section {
         h2::after { margin-bottom: 50px; }
         .item {
             display: flex; justify-content: space-between;
-            .info {
-                position: relative;
-                img { width: 200px; height: auto; border: 5px solid #fff; box-sizing: border-box; box-shadow: 0 0 20px rgba(100, 100, 100, 0.3); }
-                button { position: absolute; left: calc(50% - 17px); bottom: 0; transform: translateY(50%); display: inline-block; width: 34px; height: 34px; background-color: #fff; border-radius: 50%; }
-            }
+            li { text-align: left; }
+            li::before { display: block; font-size: 40px; color: $primary; transform: translate(-22px, 18px); }
+            li:nth-child(1)::before { content: '01'; font-size: 50px; transform: translate(-28px, 18px); }
+            li:nth-child(2)::before { content: '02'; }
+            li:nth-child(3)::before { content: '03'; }
+            li:nth-child(4)::before { content: '04'; }
+            li:nth-child(5)::before { content: '05'; }
+            h3 { position: relative; z-index: 10; background-color: #ddd; padding: 5px; font-size: 17px; }
+            .best { width: 150px; height: 205px; margin: 5px; border: 1px solid #fff; box-sizing: border-box; }
+            .best.first { width: 210px; height: 287px; }
         }
         .none { display: none; }
         .none::before { content: ''; display: block; width: 100px; margin: 60px auto 30px; border-top: 1px solid #555; }
@@ -157,7 +162,7 @@ footer {
 .inner { position: relative; width: 90%; max-width: 1140px; margin: auto; }
 
 header.fixed {
-    position: fixed; top: 0; left: 0; height: 80px; box-shadow: 0 0 20px rgba(100, 100, 100, 0.3);
+    position: fixed; top: 0; left: 0; z-index: 50; height: 80px; box-shadow: 0 0 20px rgba(100, 100, 100, 0.3);
     .headerInner {
         height: 80px;
         .logo { line-height: 80px; }

@@ -25,8 +25,7 @@ $(window).on('scroll' , function() {
 });
 
 $(window).on('resize', function() {
-    var width = $(window).width();
-    if (width < 640) {
+    if ($(window).width() < 640) {
         $('div.posLeft').css('display', 'block');
         $('div.posRight').css('display', 'block');
     } else {

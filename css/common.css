@@ -45,7 +45,7 @@ header {
         background-color: rgba(0, 0, 0, 0.1); }
       header .max ul li i {
         margin-left: 60px; }
-      header .max ul li i.last {
+      header .max ul li i:last-child {
         margin-left: 20px; }
       header .max ul li input {
         width: 150px;
@@ -181,24 +181,40 @@ section {
     section .article2 .item {
       display: flex;
       justify-content: space-between; }
-      section .article2 .item .info {
-        position: relative; }
-        section .article2 .item .info img {
-          width: 200px;
-          height: auto;
-          border: 5px solid #fff;
-          box-sizing: border-box;
-          box-shadow: 0 0 20px rgba(100, 100, 100, 0.3); }
-        section .article2 .item .info button {
-          position: absolute;
-          left: calc(50% - 17px);
-          bottom: 0;
-          transform: translateY(50%);
-          display: inline-block;
-          width: 34px;
-          height: 34px;
-          background-color: #fff;
-          border-radius: 50%; }
+      section .article2 .item li {
+        text-align: left; }
+      section .article2 .item li::before {
+        display: block;
+        font-size: 40px;
+        color: #00afa0;
+        transform: translate(-22px, 18px); }
+      section .article2 .item li:nth-child(1)::before {
+        content: '01';
+        font-size: 50px;
+        transform: translate(-28px, 18px); }
+      section .article2 .item li:nth-child(2)::before {
+        content: '02'; }
+      section .article2 .item li:nth-child(3)::before {
+        content: '03'; }
+      section .article2 .item li:nth-child(4)::before {
+        content: '04'; }
+      section .article2 .item li:nth-child(5)::before {
+        content: '05'; }
+      section .article2 .item h3 {
+        position: relative;
+        z-index: 10;
+        background-color: #ddd;
+        padding: 5px;
+        font-size: 17px; }
+      section .article2 .item .best {
+        width: 150px;
+        height: 205px;
+        margin: 5px;
+        border: 1px solid #fff;
+        box-sizing: border-box; }
+      section .article2 .item .best.first {
+        width: 210px;
+        height: 287px; }
     section .article2 .none {
       display: none; }
     section .article2 .none::before {
@@ -302,6 +318,7 @@ header.fixed {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 50;
   height: 80px;
   box-shadow: 0 0 20px rgba(100, 100, 100, 0.3); }
   header.fixed .headerInner {
