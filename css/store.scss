@@ -1,7 +1,7 @@
 // @charset "UTF-8";
 
 $primary: #00afa0;
-$header: #fff;
+$header: #222;
 
 body { font-family: 'Roboto', sans-serif; }
 
@@ -80,20 +80,16 @@ header.fixed {
     }
 }
 
-main {
-    width: 100%;
-    .bxSlider {
-        .slide1 { display: flex; justify-content: center; align-items: flex-end; height: 600px; background-color: #ddd; }
-        .slide2 { display: flex; justify-content: center; align-items: flex-end; height: 600px; background-color: #108acb; }
-        @media screen and (max-width: 640px) {
-            .slide1 { height: 200px; }
-            .slide2 { height: 200px; }
-        }
+nav.lnb {
+    margin-top: 200px;
+    .menu {
+        display: flex; justify-content: flex-start;
+        li { margin: 15px 20px 15px 0; cursor: pointer; }
     }
+    .menu:first-child { border-bottom: 1px solid #555; }
 }
 
 section {
-    text-align: center;
     .articleInner { padding: 50px 0; }
     h2 { line-height: 50px; font-size: 45px; font-weight: 700; color: #555; transition: 0.3s; }
     h2::after { content: ''; display: block; width: 50px; margin: 20px auto; border-bottom: 1px solid #555; transition: 0.3s; }
@@ -115,70 +111,6 @@ section {
                 .listLi:not(.first) { display: none; }
             }
         }
-    }
-    .article2 {
-        background-color: #ddd;
-        h2::after { margin-bottom: 50px; }
-        .item {
-            display: flex; justify-content: space-between;
-            li::before { display: block; font-size: 40px; color: $primary; transform: translateY(15px); }
-            li:nth-child(1)::before { content: '01'; font-size: 50px; transform: translateY(18px); }
-            li:nth-child(2)::before { content: '02'; }
-            li:nth-child(3)::before { content: '03'; }
-            li:nth-child(4)::before { content: '04'; }
-            li:nth-child(5)::before { content: '05'; }
-            li {
-                text-align: left;
-                h3 { position: relative; z-index: 10; background-color: #ddd; padding: 5px; font-size: 17px; }
-                .best { width: 150px; height: 205px; margin: 5px; background-color: #fff; box-sizing: border-box; }
-                .best.first { width: 210px; height: 287px; transition: 0.3s; }
-            }
-        }
-        @media screen and (max-width: 640px) {
-            .item {
-                li:nth-child(1) { width: 100%; }
-                li:nth-child(2) { width: 50%; }
-                li:nth-child(3) { width: 50%; }
-                li:nth-child(4) { width: 50%; }
-                li:nth-child(5) { width: 50%; }
-                li {
-                    display: block;
-                    .best.first { width: 150px; height: 205px; }
-                }
-            }
-        }
-    }
-    .article3 {
-        background-color: #fff;
-        h2::after { margin-bottom: 50px; }
-        .posLeft {
-            display: inline-block; max-width: 300px; vertical-align: top;
-            img { max-width: 300px; height: auto; border: 5px solid #fff; box-sizing: border-box; box-shadow: 0 0 20px rgba(100, 100, 100, 0.3); }
-            img:not(:first-of-type) { display: none; }
-        }
-        .posRight {
-            display: inline-block; max-width: 540px; margin-top: 1px; margin-left: 10%;
-            dl {
-                color: #555; text-align: left; border-bottom: 1px solid #aaa;
-                dt { padding: 10px; max-width: 540px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; cursor: pointer; border-top: 1px solid #aaa; box-sizing: border-box; }
-                dt:hover { background-color: #eee; }
-                dt.on { background-color: #eee; }
-                dd { display: none; padding: 10px; line-height: 20px; font-size: 13px; }
-            }
-        }
-        @media screen and (max-width: 640px) {
-            .posLeft { margin: auto; }
-            .posRight {
-                margin-left: 0; width: 300px; margin: auto;
-                dl {
-                    dt { width: 300px; }
-                }
-                dl:first-child { margin-top: 25px; }
-            }
-        }
-    }
-    @media screen and (max-width: 640px) {
-        h2 { font-size: 30px; transition: 0.3s; }
     }
 }
 
