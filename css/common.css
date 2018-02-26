@@ -115,7 +115,7 @@ header {
   header .fa-bars {
     display: none; }
   @media screen and (max-width: 1024px) {
-    header .logo {
+    header .logo a {
       line-height: 83px; }
     header .fa-bars {
       display: block;
@@ -129,7 +129,7 @@ header {
       header .headerInner {
         height: 70px;
         transition: 0.3s; }
-        header .headerInner .logo {
+        header .headerInner .logo a {
           line-height: 73px;
           font-size: 30px;
           transition: 0.3s; }
@@ -147,14 +147,14 @@ header.fixed {
   box-shadow: 0 0 20px rgba(100, 100, 100, 0.3); }
   header.fixed .headerInner {
     height: 80px; }
-    header.fixed .headerInner .logo {
+    header.fixed .headerInner .logo a {
       line-height: 83px; }
   @media screen and (max-width: 640px) {
     header.fixed {
       height: 70px; }
       header.fixed .headerInner {
         height: 70px; }
-        header.fixed .headerInner .logo {
+        header.fixed .headerInner .logo a {
           line-height: 73px; } }
 
 main {

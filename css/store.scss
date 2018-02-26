@@ -49,7 +49,9 @@ header {
     }
     .fa-bars { display: none; }
     @media screen and (max-width: 1024px) {
-        .logo { line-height: 83px; }
+        .logo {
+            a { line-height: 83px; }
+        }
         .fa-bars { display: block; top: 25px; }
         .max { display: none; }
     }
@@ -57,7 +59,9 @@ header {
         height: 70px; transition: 0.3s;
         .headerInner {
             height: 70px; transition: 0.3s;
-            .logo { line-height: 73px; font-size: 30px; transition: 0.3s; }
+            .logo {
+                a { line-height: 73px; font-size: 30px; transition: 0.3s; }
+            }
             .fa-bars { top: 25px; font-size: 20px; }
         }
         .max { display: none; }
@@ -69,13 +73,17 @@ header.fixed {
     height: 80px; background-color: $primary; box-shadow: 0 0 20px rgba(100, 100, 100, 0.3);
     .headerInner {
         height: 80px;
-        .logo { line-height: 83px; }
+        .logo {
+            a { line-height: 83px; }
+        }
     }
     @media screen and (max-width: 640px) {
         height: 70px;
         .headerInner {
             height: 70px;
-            .logo { line-height: 73px; }
+            .logo {
+                a { line-height: 73px; }
+            }
         }
     }
 }
