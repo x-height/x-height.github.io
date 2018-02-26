@@ -120,7 +120,7 @@ header {
     header .fa-bars {
       display: block;
       top: 25px; }
-    header .max {
+    header nav.max {
       display: none; } }
   @media screen and (max-width: 640px) {
     header {
@@ -136,9 +136,9 @@ header {
         header .headerInner .fa-bars {
           top: 25px;
           font-size: 20px; }
-      header .max {
+      header nav.max {
         display: none; }
-      header .min {
+      header nav.min {
         width: 50%; } }
 
 header.fixed {

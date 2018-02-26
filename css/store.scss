@@ -53,7 +53,7 @@ header {
             a { line-height: 83px; }
         }
         .fa-bars { display: block; top: 25px; }
-        .max { display: none; }
+        nav.max { display: none; }
     }
     @media screen and (max-width: 640px) {
         height: 70px; transition: 0.3s;
@@ -64,8 +64,8 @@ header {
             }
             .fa-bars { top: 25px; font-size: 20px; }
         }
-        .max { display: none; }
-        .min { width: 50%; }
+        nav.max { display: none; }
+        nav.min { width: 50%; }
     }
 }
 
