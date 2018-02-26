@@ -89,7 +89,8 @@ header {
     display: none; }
   @media screen and (max-width: 1024px) {
     header .fa-bars {
-      display: block; }
+      display: block;
+      top: 25px; }
     header .max {
       display: none; } }
   @media screen and (max-width: 640px) {
@@ -110,6 +111,25 @@ header {
         display: none; }
       header .min {
         width: 50%; } }
+
+header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  background-color: #00afa0;
+  box-shadow: 0 0 20px rgba(100, 100, 100, 0.3); }
+  header.fixed .headerInner {
+    height: 80px; }
+    header.fixed .headerInner .logo {
+      line-height: 83px; }
+  @media screen and (max-width: 640px) {
+    header.fixed {
+      height: 70px; }
+      header.fixed .headerInner {
+        height: 70px; }
+        header.fixed .headerInner .logo {
+          line-height: 73px; } }
 
 main {
   width: 100%; }
@@ -307,24 +327,5 @@ footer {
   width: 90%;
   max-width: 1140px;
   margin: auto; }
-
-header.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 80px;
-  background-color: #00afa0;
-  box-shadow: 0 0 20px rgba(100, 100, 100, 0.3); }
-  header.fixed .headerInner {
-    height: 80px; }
-    header.fixed .headerInner .logo {
-      line-height: 85px; }
-  @media screen and (max-width: 640px) {
-    header.fixed {
-      height: 70px; }
-      header.fixed .headerInner {
-        height: 70px; }
-        header.fixed .headerInner .logo {
-          line-height: 75px; } }
 
 /*# sourceMappingURL=common.css.map */

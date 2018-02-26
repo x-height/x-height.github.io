@@ -38,7 +38,7 @@ header {
     }
     .fa-bars { display: none; }
     @media screen and (max-width: 1024px) {
-        .fa-bars { display: block; }
+        .fa-bars { display: block; top: 25px; }
         .max { display: none; }
     }
     @media screen and (max-width: 640px) {
@@ -50,6 +50,21 @@ header {
         }
         .max { display: none; }
         .min { width: 50%; }
+    }
+}
+
+header.fixed {
+    position: fixed; top: 0; left: 0; height: 80px; background-color: $primary; box-shadow: 0 0 20px rgba(100, 100, 100, 0.3);
+    .headerInner {
+        height: 80px;
+        .logo { line-height: 83px; }
+    }
+    @media screen and (max-width: 640px) {
+        height: 70px;
+        .headerInner {
+            height: 70px;
+            .logo { line-height: 73px; }
+        }
     }
 }
 
@@ -158,19 +173,3 @@ footer {
 }
 
 .inner { position: relative; width: 90%; max-width: 1140px; margin: auto; }
-
-header.fixed {
-    position: fixed; top: 0; left: 0; height: 80px; background-color: $primary; box-shadow: 0 0 20px rgba(100, 100, 100, 0.3);
-    .headerInner {
-        height: 80px;
-        .logo { line-height: 85px; }
-    }
-    @media screen and (max-width: 640px) {
-        height: 70px;
-        .headerInner {
-            height: 70px;
-            .logo { line-height: 75px; }
-        }
-    }
-}
-

@@ -13,9 +13,7 @@ $(".owl-carousel").owlCarousel({
 });
 
 $(window).on('scroll' , function() {
-    var height = $('header').height();
-    var scroll = $(this).scrollTop();
-    if (scroll >= height) {
+    if ($(this).scrollTop() >= $('header').height()) {
         $('header').addClass('fixed');
         $('.sign').hide();
     } else {
