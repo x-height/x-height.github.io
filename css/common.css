@@ -127,9 +127,9 @@ main {
     background-color: #108acb; }
   @media screen and (max-width: 640px) {
     main .bxSlider .grey {
-      height: 200px; }
+      height: 300px; }
     main .bxSlider .blue {
-      height: 200px; } }
+      height: 300px; } }
 
 section {
   text-align: center; }
