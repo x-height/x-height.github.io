@@ -143,7 +143,6 @@ function createImages(data) {
     var img = data.images;
     var cover = '';
     var storeBook = $('div.storeBook');
-    
     for (var i = 0; i < img.length; i++) {
         cover += '<div class="bookList">';
         cover += '<img src="' + img[i].url + '" class="bookImg" />';
@@ -151,11 +150,12 @@ function createImages(data) {
         cover += '<p class="author">' + img[i].author + ' | ' + '<span class="company">' + img[i].company + '</span>' + '</p>';
         cover += '</div>';
     }
-    
     storeBook.append(cover);
 }
 
+
 $('img.bookImg').on('click', function() {
+    console.log($('img.bookImg'));
     $('div.zoom').css('display', 'block');
     zoomInImage();
 });
@@ -165,3 +165,9 @@ function zoomInImage() {
     zoom += '<img src="' + img[i].url + '" />';
     $('div.zoom').append(zoom);
 }
+
+$('ul.menu li').eq(0).addClass('on');
+$('ul.menu li').on('click', function() {
+    $('ul.menu li').removeClass('on');
+    $(this).addClass('on');
+});
