@@ -1,7 +1,7 @@
 // @charset "UTF-8";
 
-$primary: #00afa0;
-$header: #222;
+$primary: #a6d5db;
+$header: #555;
 
 body { font-family: 'Roboto', sans-serif; }
 
@@ -24,7 +24,7 @@ header {
                 a:not(.last):hover { background-color: rgba(0, 0, 0, 0.1); }
                 i { margin-left: 70px; margin-right: 10px; }
                 i.last { margin-left: 20px; margin-right: 0; }
-                input { width: 150px; background-color: transparent; color: #fff; }
+                input { width: 150px; background-color: transparent; color: $header; }
                 ul.menu2 {
                     position: absolute; top: 49px; display: flex; flex-flow: column; background-color: #fff; box-shadow: 0 0 20px rgba(100, 100, 100, 0.3); visibility: hidden;
                     li {
@@ -108,8 +108,12 @@ section {
             a:hover { color: $primary; }
         }
         .storeBook {
-            display: flex; justify-content: space-between; margin: 20px;
-            .bookImg { width: auto; height: 260px; }
+            display: flex; justify-content: space-between; flex-wrap: wrap;
+            .bookList {
+                width: 25%;
+                .bookImg { width: auto; height: 250px; margin: 20px auto; border: 1px solid #ccc; }
+                .title { font-size: 14px; }
+            }
         }
     }
 }
