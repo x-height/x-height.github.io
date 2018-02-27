@@ -132,25 +132,28 @@ window.onload = function() {
 
 function startLoadFile() {
     $.ajax({
-        url : 'img.json',
+        url : 'imgList.json',
         type : 'GET',
         dataType : 'json',
         success : function(data) {
             createImages(data)
+        },
+        error : function() {
+            console.log(error);
         }
     });
 }
 
 function createImages(data) {
-    var images = data.images;
-    console.log(images);
-    var strDOM = "";
-    for (var i = 0; i < images.length; i++) {
-        var image = images[i];
-        strDOM += '<img src="' + image.url + '">';
-        strDOM += '<p class="title">' + image.title + '</p>';
+    var img = data.images;
+    var cover = "";
+
+    for (var i = 0; i < img.length; i++) {
+        cover = '<img src=" + img[i].url + ">';
+        cover = '<p class="title">' + img[i].title + '</p>';
+        console.log(cover);
     }
+
     var book = $("#book");
-    book.append(strDOM);
-    console.log(book);
+    book.append(cover);
 }
