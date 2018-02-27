@@ -107,10 +107,9 @@ section {
             a, i { line-height: 70px; color: #888; margin-bottom: 10px; cursor: pointer; }
             a:hover { color: $primary; }
         }
-        .book {
+        .storeBook {
             display: flex; justify-content: space-between; margin: 20px;
-            .bookImg { width: auto; height: 205px; }
-            .title {  }
+            .bookImg { width: auto; height: 260px; }
         }
     }
 }

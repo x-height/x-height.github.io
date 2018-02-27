@@ -186,13 +186,13 @@ section .article1 {
       cursor: pointer; }
     section .article1 .list a:hover {
       color: #00afa0; }
-  section .article1 .book {
+  section .article1 .storeBook {
     display: flex;
     justify-content: space-between;
     margin: 20px; }
-    section .article1 .book .bookImg {
+    section .article1 .storeBook .bookImg {
       width: auto;
-      height: 205px; }
+      height: 260px; }
 
 footer {
   text-align: center;

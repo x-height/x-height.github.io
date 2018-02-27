@@ -9,7 +9,7 @@ $(".bxSlider").bxSlider({
 $(".owl-carousel").owlCarousel({
     items : 5,
     responsiveClass : true,
-    responsive : { 0 : { items : 2 }, 780 : { items : 4 }, 1200 : { items : 5 } }
+    responsive : { 0 : { items : 2 }, 780 : { items : 3 }, 1200 : { items : 5 } }
 });
 
 $(window).on('scroll' , function() {
@@ -142,14 +142,14 @@ function startLoadFile() {
 function createImages(data) {
     var img = data.images;
     var cover = '';
-    var bookList = '<div class="bookList"></div>';
-    var book = $('div.book');
+    var storeBook = $('div.storeBook');
     
     for (var i = 0; i < img.length; i++) {
+        cover += '<div class="bookList">';
         cover += '<img src="' + img[i].url + '" class="bookImg" />';
         cover += '<p class="title">' + img[i].title + '</p>';
-        bookList.append(cover);
+        cover += '</div>';
     }
     
-    book.append(bookList);
+    storeBook.append(cover);
 }

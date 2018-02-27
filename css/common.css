@@ -215,13 +215,17 @@ section {
       justify-content: space-between; }
       section .article1 .book img {
         width: auto;
-        height: 205px;
+        height: 260px;
         margin: auto; }
     @media screen and (max-width: 800px) {
       section .article1 .list {
         max-width: 200px; }
         section .article1 .list .listLi:not(.first) {
-          display: none; } }
+          display: none; }
+      section .article1 .book img {
+        width: auto;
+        height: 210px;
+        margin: auto; } }
   section .article2 {
     background-color: #ddd; }
     section .article2 h2::after {

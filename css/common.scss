@@ -115,12 +115,15 @@ section {
         }
         .book {
             display: flex; justify-content: space-between;
-            img { width: auto; height: 205px; margin: auto; }
+            img { width: auto; height: 260px; margin: auto; }
         }
         @media screen and (max-width: 800px) {
             .list {
                 max-width: 200px;
                 .listLi:not(.first) { display: none; }
+            }
+            .book {
+                img { width: auto; height: 210px; margin: auto; }
             }
         }
     }
