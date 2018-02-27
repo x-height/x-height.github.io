@@ -112,8 +112,9 @@ section {
             .bookList {
                 width: 25%;
                 .bookImg { width: auto; height: 250px; margin: 20px auto; border: 1px solid #ccc; cursor: zoom-in; }
-                .title { width: 100%; font-size: 14px; font-weight: 500; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+                .title { width: 100%; margin-bottom: 5px; font-size: 14px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
                 .author { font-size: 14px; }
+                .company { font-size: 14px; }
             }
         }
     }
