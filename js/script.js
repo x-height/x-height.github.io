@@ -148,6 +148,7 @@ function createImages(data) {
         cover += '<div class="bookList">';
         cover += '<img src="' + img[i].url + '" class="bookImg" />';
         cover += '<p class="title">' + img[i].title + '</p>';
+        cover += '<p class="author">' + img[i].author + '</p>';
         cover += '</div>';
     }
     
