@@ -172,8 +172,6 @@ section .articleInner {
   padding: 50px 0; }
 section .article1 {
   background-color: #fff; }
-  section .article1 .articleInner {
-    padding-top: 0; }
   section .article1 .list {
     display: flex;
     justify-content: space-between;
@@ -197,7 +195,7 @@ section .article1 {
         height: 250px;
         margin: 20px auto;
         border: 1px solid #ccc;
-        cursor: zoom-in; }
+        cursor: pointer; }
       section .article1 .storeBook .bookList .title {
         width: 100%;
         margin-bottom: 5px;
@@ -210,6 +208,18 @@ section .article1 {
         font-size: 14px; }
       section .article1 .storeBook .bookList .company {
         font-size: 14px; }
+  section .article1 .zoom {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+    display: none;
+    margin: auto;
+    width: 500px;
+    height: 600px;
+    background-color: #fff; }
 
 footer {
   text-align: center;

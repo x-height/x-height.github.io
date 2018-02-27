@@ -100,7 +100,6 @@ nav.lnb {
 section {
     .articleInner { padding: 50px 0; }
     .article1 {
-        .articleInner { padding-top: 0; }
         background-color: #fff;
         .list {
             display: flex; justify-content: space-between; max-width: 700px; margin: auto;
@@ -111,12 +110,13 @@ section {
             display: flex; justify-content: space-between; flex-wrap: wrap;
             .bookList {
                 width: 25%;
-                .bookImg { width: auto; height: 250px; margin: 20px auto; border: 1px solid #ccc; cursor: zoom-in; }
+                .bookImg { width: auto; height: 250px; margin: 20px auto; border: 1px solid #ccc; cursor: pointer; }
                 .title { width: 100%; margin-bottom: 5px; font-size: 14px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
                 .author { font-size: 14px; }
                 .company { font-size: 14px; }
             }
         }
+        .zoom { position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: 30; display: none; margin: auto; width: 500px; height: 600px; background-color: #fff; }
     }
 }
 

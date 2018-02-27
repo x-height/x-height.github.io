@@ -154,3 +154,14 @@ function createImages(data) {
     
     storeBook.append(cover);
 }
+
+$('img.bookImg').on('click', function() {
+    $('div.zoom').css('display', 'block');
+    zoomInImage();
+});
+
+function zoomInImage() {
+    var zoom = '';
+    zoom += '<img src="' + img[i].url + '" />';
+    $('div.zoom').append(zoom);
+}
