@@ -126,9 +126,7 @@ $('ul.item li button').each(function(i) {
 });
 
 
-window.onload = function() {
-    startLoadFile();
-};
+startLoadFile();
 
 function startLoadFile() {
     $.ajax({
