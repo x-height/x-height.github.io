@@ -130,7 +130,7 @@ section {
         .item {
             display: flex; justify-content: space-between;
             li::before { display: block; font-size: 40px; color: $primary; transform: translateY(15px); }
-            li:nth-child(1)::before { content: '01'; font-size: 50px; transform: translateY(18px); }
+            li:nth-child(1)::before { content: '01'; }
             li:nth-child(2)::before { content: '02'; }
             li:nth-child(3)::before { content: '03'; }
             li:nth-child(4)::before { content: '04'; }

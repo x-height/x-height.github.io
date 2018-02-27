@@ -32,6 +32,16 @@ $(window).on('resize', function() {
     }
 });
 
+$('#searchIcon').on('click', function() {
+    var val = $('#search').val();
+    console.log(val);
+    $('h1:contains(' + val + ')').css('background-color', '#ffc900');
+    $('h2:contains(' + val + ')').css('background-color', '#ffc900');
+    $('h3:contains(' + val + ')').css('background-color', '#ffc900');
+    $('p:contains(' + val + ')').css('background-color', '#ffc900');
+    $('a:contains(' + val + ')').css('background-color', '#ffc900');
+});
+
 $('ul.menu1 > li > a').each(function(i) {
     $('ul.menu2').eq(i).css('width', $('ul.menu1 > li > a').eq(i).width() + 'px');
 });

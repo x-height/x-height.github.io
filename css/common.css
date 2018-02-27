@@ -235,9 +235,7 @@ section {
         color: #00afa0;
         transform: translateY(15px); }
       section .article2 .item li:nth-child(1)::before {
-        content: '01';
-        font-size: 50px;
-        transform: translateY(18px); }
+        content: '01'; }
       section .article2 .item li:nth-child(2)::before {
         content: '02'; }
       section .article2 .item li:nth-child(3)::before {
