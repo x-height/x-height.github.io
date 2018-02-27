@@ -109,7 +109,8 @@ section {
         }
         .book {
             display: flex; justify-content: space-between; margin: 20px;
-            .img { width: 150px; height: 205px; background-color: #eee; }
+            .bookImg { width: auto; height: 205px; }
+            .title {  }
         }
     }
 }

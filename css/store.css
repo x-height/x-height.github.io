@@ -190,10 +190,9 @@ section .article1 {
     display: flex;
     justify-content: space-between;
     margin: 20px; }
-    section .article1 .book .img {
-      width: 150px;
-      height: 205px;
-      background-color: #eee; }
+    section .article1 .book .bookImg {
+      width: auto;
+      height: 205px; }
 
 footer {
   text-align: center;

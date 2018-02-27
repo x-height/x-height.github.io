@@ -73,12 +73,12 @@ $('.list a').each(function(i) {
 });
 
 
-var left = doc.querySelector('.fa-chevron-left');
-var right = doc.querySelector('.fa-chevron-right');
-var listLiA = doc.getElementsByClassName('listLiA');
-var thisList = 0;
-var lastList = listLiA.length - 1;
-console.log(listLiA);
+// var left = doc.querySelector('.fa-chevron-left');
+// var right = doc.querySelector('.fa-chevron-right');
+// var listLiA = doc.getElementsByClassName('listLiA');
+// var thisList = 0;
+// var lastList = listLiA.length - 1;
+// console.log(listLiA);
 
 // left.addEventListener('click', function() {
 //     thisList--;
@@ -91,22 +91,22 @@ console.log(listLiA);
 //     });
 // });
 
-right.addEventListener('click', function() {
-    thisList++;
-    if (thisList > lastList) {
-        var intervarId = setInterval(function() {
-            clearInterval(intervarId);
-            listLiA[0].style.color = '#00afa0';
-            listLiA[lastList].style.color = '#888888';
-        });
-    } else {
-        var intervarId = setInterval(function() {
-            clearInterval(intervarId);
-            listLiA[thisList].style.color = '#00afa0';
-            listLiA[thisList - 1].style.color = '#888888';
-        });
-    }
-});
+// right.addEventListener('click', function() {
+//     thisList++;
+//     if (thisList > lastList) {
+//         var intervarId = setInterval(function() {
+//             clearInterval(intervarId);
+//             listLiA[0].style.color = '#00afa0';
+//             listLiA[lastList].style.color = '#888888';
+//         });
+//     } else {
+//         var intervarId = setInterval(function() {
+//             clearInterval(intervarId);
+//             listLiA[thisList].style.color = '#00afa0';
+//             listLiA[thisList - 1].style.color = '#888888';
+//         });
+//     }
+// });
 
 $('dt').each(function(i) {
     $(this).on('click', function() {
@@ -137,23 +137,21 @@ function startLoadFile() {
         dataType : 'json',
         success : function(data) {
             createImages(data)
-        },
-        error : function() {
-            console.log(error);
         }
     });
 }
 
 function createImages(data) {
     var img = data.images;
-    var cover = "";
-
+    var cover = '';
+    var bookList = '<div class="bookList"></div>';
+    var book = $('div.book');
+    
     for (var i = 0; i < img.length; i++) {
-        cover = '<img src=" + img[i].url + ">';
-        cover = '<p class="title">' + img[i].title + '</p>';
-        console.log(cover);
+        cover += '<img src="' + img[i].url + '" class="bookImg" />';
+        cover += '<p class="title">' + img[i].title + '</p>';
+        bookList.append(cover);
     }
-
-    var book = $("#book");
-    book.append(cover);
+    
+    book.append(bookList);
 }
