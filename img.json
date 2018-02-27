@@ -1,0 +1,7 @@
+{"images" : [
+    {"title" : "이미지 1", "url" : "img/book1.jpg"},
+    {"title" : "이미지 2", "url" : "img/book2.jpg"},
+    {"title" : "이미지 3", "url" : "img/book3.jpg"},
+    {"title" : "이미지 4", "url" : "img/book4.jpg"},
+    {"title" : "이미지 5", "url" : "img/book5.jpg"}
+]}
