@@ -171,9 +171,9 @@ main {
       height: auto; }
   @media screen and (max-width: 640px) {
     main .bxSlider .slide1 {
-      height: 300px; }
+      height: 400px; }
     main .bxSlider .slide2 {
-      height: 300px; } }
+      height: 400px; } }
 
 section {
   text-align: center; }
@@ -226,6 +226,7 @@ section {
         margin: auto; } }
     @media screen and (max-width: 640px) {
       section .article1 h2 {
+        margin-top: -160px;
         font-size: 30px;
         transition: 0.3s; } }
   section .article2 {
@@ -341,7 +342,7 @@ section {
         section .article3 .posRight dl:first-child {
           margin-top: 25px; } }
   section .article4 {
-    background-color: #fff; }
+    background-image: url(../img/bg-wt-001.jpg); }
     section .article4 .posLeft {
       display: inline-block;
       max-width: 300px;
@@ -395,32 +396,6 @@ section {
           width: 300px; }
         section .article4 .posRight dl:first-child {
           margin-top: 25px; } }
-
-footer {
-  text-align: center;
-  line-height: 16px;
-  background-color: #333;
-  font-size: 12px;
-  color: #aaa; }
-  footer .footerInner {
-    max-width: 960px;
-    padding: 20px 0; }
-  footer h3 {
-    margin-bottom: 25px;
-    font-size: 13px;
-    font-weight: 700; }
-  footer .info {
-    display: flex;
-    justify-content: space-between; }
-    footer .info .icon {
-      font-size: 25px; }
-      footer .info .icon i {
-        margin: 0 10px;
-        cursor: pointer; }
-      footer .info .icon i:hover {
-        color: #fff; }
-  footer .address {
-    margin-top: 30px; }
 
 .inner {
   position: relative;
