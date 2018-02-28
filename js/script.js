@@ -44,9 +44,6 @@ $('#searchIcon').on('click', function() {
 
 $('ul.menu1 > li > a').each(function(i) {
     $('ul.menu2').eq(i).css('width', $('ul.menu1 > li > a').eq(i).width() + 'px');
-});
-
-$('ul.menu1 > li > a').each(function(i) {
     $(this).on('click', function() {
         $('ul.menu2').eq(i).toggleClass('on');
     });
