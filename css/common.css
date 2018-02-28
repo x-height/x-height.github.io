@@ -171,9 +171,9 @@ main {
       height: auto; }
   @media screen and (max-width: 640px) {
     main .bxSlider .slide1 {
-      height: 200px; }
+      height: 400px; }
     main .bxSlider .slide2 {
-      height: 200px; } }
+      height: 400px; } }
 
 section {
   text-align: center; }
@@ -224,6 +224,10 @@ section {
         width: auto;
         height: 210px;
         margin: auto; } }
+    @media screen and (max-width: 640px) {
+      section .article1 h2 {
+        font-size: 30px;
+        transition: 0.3s; } }
   section .article2 {
     background-color: #eee; }
     section .article2 .item {
@@ -263,6 +267,9 @@ section {
           height: 287px;
           transition: 0.3s; }
     @media screen and (max-width: 640px) {
+      section .article2 h2 {
+        font-size: 30px;
+        transition: 0.3s; }
       section .article2 .item li:nth-child(1) {
         width: 100%; }
       section .article2 .item li:nth-child(2) {
