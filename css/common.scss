@@ -139,7 +139,7 @@ section {
     .article2 {
         background-color: #eee;
         .bestsellerList {
-            display: flex; justify-content: space-between;
+            display: flex; justify-content: space-between; width: 100%;
             .itemFisrt {
                 width: 25%;
                 .bestsellerFirst::before { content: '01'; display: block; font-size: 40px; color: $primary; transform: translateY(15px); }
@@ -169,15 +169,25 @@ section {
         }
         @media screen and (max-width: 640px) {
             h2 { font-size: 30px; transition: 0.3s; }
-            .item {
-                li:nth-child(1) { width: 100%; }
-                li:nth-child(2) { width: 50%; }
-                li:nth-child(3) { width: 50%; }
-                li:nth-child(4) { width: 50%; }
-                li:nth-child(5) { width: 50%; }
-                li {
-                    display: block;
-                    .best.first { width: 150px; height: 205px; }
+            .bestsellerList {
+                display: block; 
+                .itemFisrt {
+                    display: flex; justify-content: center; width: 100%;
+                    .bestsellerFirst {
+                        .best { width: 150px; height: 205px; }
+                    }
+                }
+                .item {
+                    display: flex; justify-content: center; width: 100%;
+                    .bestseller { width: auto; }
+                    .bestseller:nth-child(1) { display: block; }
+                    .bestseller:nth-child(2) { display: block; }
+                    .bestseller:nth-child(3) { display: none; }
+                    .bestseller:nth-child(4) { display: none; }
+                    .bestseller:nth-child(5) { display: none; }
+                    .bestseller:nth-child(6) { display: none; }
+                    .bestseller:nth-child(7) { display: none; }
+                    .bestseller:nth-child(8) { display: none; }
                 }
             }
         }
