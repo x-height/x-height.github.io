@@ -1,6 +1,6 @@
 // @charset "UTF-8";
 
-$primary: #00afa0;
+$primary: #2ab8f0;
 $header: #fff;
 
 body { font-family: 'Roboto', sans-serif; }
@@ -70,7 +70,7 @@ header {
 }
 
 header.fixed {
-    height: 80px; background-color: $primary; box-shadow: 0 0 20px rgba(100, 100, 100, 0.3);
+    height: 80px; background-color: rgba(20, 20, 20, 0.8); box-shadow: 0 0 20px rgba(100, 100, 100, 0.3);
     .headerInner {
         height: 80px;
         .logo {
@@ -138,19 +138,26 @@ section {
     }
     .article2 {
         background-color: #eee;
+        .bestsellerList { display: flex; justify-content: space-between; }
+        .itemFirst {
+            .bestseller::before { content: '01'; display: block; font-size: 40px; color: $primary; transform: translateY(15px); }
+            li {
+                text-align: left;
+                h3 { position: relative; z-index: 10; background-color: #eee; padding: 5px; font-size: 17px; }
+                .best { width: 210px; height: 287px; transition: 0.3s; }
+            }
+        }
         .item {
-            display: flex; justify-content: space-between;
-            li::before { display: block; font-size: 40px; color: $primary; transform: translateY(15px); }
-            li:nth-child(1)::before { content: '01'; }
-            li:nth-child(2)::before { content: '02'; }
-            li:nth-child(3)::before { content: '03'; }
-            li:nth-child(4)::before { content: '04'; }
-            li:nth-child(5)::before { content: '05'; }
+            display: flex; justify-content: space-between; flex-wrap: wrap;
+            > div::before { display: block; font-size: 40px; color: $primary; transform: translateY(15px); }
+            li:nth-child(1)::before { content: '02'; }
+            li:nth-child(2)::before { content: '03'; }
+            li:nth-child(3)::before { content: '04'; }
+            li:nth-child(4)::before { content: '05'; }
             li {
                 text-align: left;
                 h3 { position: relative; z-index: 10; background-color: #eee; padding: 5px; font-size: 17px; }
                 .best { width: 150px; height: 205px; margin: 5px; background-color: #fff; box-sizing: border-box; }
-                .best.first { width: 210px; height: 287px; transition: 0.3s; }
             }
         }
         @media screen and (max-width: 640px) {

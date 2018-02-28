@@ -146,7 +146,7 @@ function createImages(data) {
     for (var i = 0; i < img.length; i++) {
         cover += '<div class="bookList">';
         cover += '<img src="' + img[i].url + '" class="bookImg" />';
-        cover += '<p class="title">' + img[i].title + '</p>';
+        cover += '<h3 class="title">' + img[i].title + '</h3>';
         cover += '<p class="author">' + img[i].author + ' | ' + '<span class="company">' + img[i].company + '</span>' + '</p>';
         cover += '</div>';
     }
