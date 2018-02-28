@@ -171,9 +171,9 @@ main {
       height: auto; }
   @media screen and (max-width: 640px) {
     main .bxSlider .slide1 {
-      height: 400px; }
+      height: 300px; }
     main .bxSlider .slide2 {
-      height: 400px; } }
+      height: 300px; } }
 
 section {
   text-align: center; }
