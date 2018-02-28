@@ -109,7 +109,7 @@ section {
             a:hover { color: $primary; }
         }
         .storeBook {
-            display: flex; justify-content: space-between; flex-wrap: wrap;
+            display: flex; justify-content: flex-start; flex-wrap: wrap;
             .bookList {
                 width: 25%; text-align: center; padding: 0 10px; box-sizing: border-box;
                 .bookImg { width: auto; height: 250px; margin: 20px 0; border: 1px solid #ccc; cursor: pointer; }

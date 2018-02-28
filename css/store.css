@@ -196,7 +196,7 @@ section .article1 {
       color: #a6d5db; }
   section .article1 .storeBook {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap; }
     section .article1 .storeBook .bookList {
       width: 25%;
