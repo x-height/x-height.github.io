@@ -367,6 +367,7 @@ section {
           section .article3 .content nav.snb ul li:first-child {
             border-top: 1px solid #ddd; }
       section .article3 .content .contents {
+        width: 70%;
         padding: 15px 40px; }
         section .article3 .content .contents .tech1, section .article3 .content .contents .tech2, section .article3 .content .contents .tech3 {
           text-align: left; }
