@@ -172,3 +172,9 @@ $('ul.menu li').on('click', function() {
     $('ul.menu li').removeClass('on');
     $(this).addClass('on');
 });
+
+$('article.article3 li h3').eq(0).addClass('on');
+$('article.article3 li').on('click', function() {
+    $('article.article3 li h3').removeClass('on');
+    $(this).children().addClass('on');
+});

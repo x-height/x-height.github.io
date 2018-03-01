@@ -334,13 +334,64 @@ section {
         section .article2 .bestsellerList .item .bestseller:nth-child(8) {
           display: none; } }
   section .article3 {
-    display: flex;
-    justify-content: space-between;
     background-color: #fff; }
-    section .article3 .culture {
-      width: 50%; }
-    section .article3 .tech {
-      width: 50%; }
+    section .article3 .content {
+      display: flex;
+      justify-content: space-between; }
+      section .article3 .content nav.snb {
+        width: 30%;
+        border-right: 1px solid #ddd; }
+        section .article3 .content nav.snb ul {
+          border-left: 3px solid #555; }
+          section .article3 .content nav.snb ul li {
+            border-bottom: 1px solid #ddd;
+            cursor: pointer; }
+            section .article3 .content nav.snb ul li h3 {
+              position: relative;
+              padding: 15px;
+              background-color: #f5f5f5;
+              text-align: left;
+              font-size: 0.875em; }
+            section .article3 .content nav.snb ul li h3.on {
+              background-color: #fff; }
+            section .article3 .content nav.snb ul li h3.on::after {
+              content: '';
+              display: block;
+              position: absolute;
+              top: 0;
+              right: -1px;
+              width: 1px;
+              height: 100%;
+              background-color: #fff; }
+          section .article3 .content nav.snb ul li:first-child {
+            border-top: 1px solid #ddd; }
+      section .article3 .content .contents {
+        padding: 20px 40px; }
+        section .article3 .content .contents .tech1 {
+          width: 100%;
+          text-align: left; }
+          section .article3 .content .contents .tech1 ul li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px; }
+            section .article3 .content .contents .tech1 ul li .thumb {
+              min-width: 140px;
+              height: 140px;
+              margin-right: 20px;
+              background-color: #eee;
+              border: 1px solid #ddd;
+              box-sizing: border-box; }
+            section .article3 .content .contents .tech1 ul li dt {
+              margin-bottom: 15px;
+              font-weight: 700; }
+            section .article3 .content .contents .tech1 ul li dd {
+              line-height: 25px;
+              font-size: 0.8125em; }
+        section .article3 .content .contents .tech2 {
+          width: 100%; }
+      section .article3 .content aside {
+        width: 20%;
+        border-left: 1px solid #ddd; }
     @media screen and (max-width: 640px) {
       section .article3 h2 {
         font-size: 30px;
