@@ -339,22 +339,23 @@ section {
       display: flex;
       justify-content: space-between; }
       section .article3 .content nav.snb {
-        width: 30%;
+        width: 20%;
         border-right: 1px solid #ddd; }
         section .article3 .content nav.snb ul {
           border-left: 3px solid #555; }
           section .article3 .content nav.snb ul li {
             border-bottom: 1px solid #ddd;
             cursor: pointer; }
-            section .article3 .content nav.snb ul li h3 {
+            section .article3 .content nav.snb ul li p {
               position: relative;
               padding: 15px;
               background-color: #f5f5f5;
               text-align: left;
               font-size: 0.875em; }
-            section .article3 .content nav.snb ul li h3.on {
-              background-color: #fff; }
-            section .article3 .content nav.snb ul li h3.on::after {
+            section .article3 .content nav.snb ul li p.on {
+              background-color: #fff;
+              font-weight: 700; }
+            section .article3 .content nav.snb ul li p.on::after {
               content: '';
               display: block;
               position: absolute;
@@ -366,32 +367,38 @@ section {
           section .article3 .content nav.snb ul li:first-child {
             border-top: 1px solid #ddd; }
       section .article3 .content .contents {
-        padding: 20px 40px; }
-        section .article3 .content .contents .tech1 {
-          width: 100%;
+        padding: 15px 40px; }
+        section .article3 .content .contents .tech1, section .article3 .content .contents .tech2, section .article3 .content .contents .tech3 {
           text-align: left; }
-          section .article3 .content .contents .tech1 ul li {
+          section .article3 .content .contents .tech1 ul li, section .article3 .content .contents .tech2 ul li, section .article3 .content .contents .tech3 ul li {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 10px; }
-            section .article3 .content .contents .tech1 ul li .thumb {
-              min-width: 140px;
-              height: 140px;
+            margin-bottom: 30px; }
+            section .article3 .content .contents .tech1 ul li .thumb, section .article3 .content .contents .tech2 ul li .thumb, section .article3 .content .contents .tech3 ul li .thumb {
+              min-width: 110px;
+              height: 110px;
               margin-right: 20px;
               background-color: #eee;
               border: 1px solid #ddd;
               box-sizing: border-box; }
-            section .article3 .content .contents .tech1 ul li dt {
+            section .article3 .content .contents .tech1 ul li dl dt, section .article3 .content .contents .tech2 ul li dl dt, section .article3 .content .contents .tech3 ul li dl dt {
               margin-bottom: 15px;
               font-weight: 700; }
-            section .article3 .content .contents .tech1 ul li dd {
+            section .article3 .content .contents .tech1 ul li dl dd, section .article3 .content .contents .tech2 ul li dl dd, section .article3 .content .contents .tech3 ul li dl dd {
               line-height: 25px;
               font-size: 0.8125em; }
-        section .article3 .content .contents .tech2 {
-          width: 100%; }
+          section .article3 .content .contents .tech1 ul li:last-child, section .article3 .content .contents .tech2 ul li:last-child, section .article3 .content .contents .tech3 ul li:last-child {
+            margin-bottom: 0; }
+        section .article3 .content .contents .tech2, section .article3 .content .contents .tech3 {
+          display: none; }
       section .article3 .content aside {
-        width: 20%;
-        border-left: 1px solid #ddd; }
+        width: 10%;
+        border-left: 1px solid #ddd;
+        text-align: right; }
+        section .article3 .content aside p {
+          padding: 15px 0 5px;
+          font-size: 0.8125em;
+          cursor: pointer; }
     @media screen and (max-width: 640px) {
       section .article3 h2 {
         font-size: 30px;
@@ -408,45 +415,6 @@ section {
           margin-top: 25px; } }
   section .article4 {
     background-image: url(../img/bg-wt-001.jpg); }
-    section .article4 .posLeft {
-      display: inline-block;
-      max-width: 300px;
-      vertical-align: top; }
-      section .article4 .posLeft img {
-        max-width: 300px;
-        height: auto;
-        border: 5px solid #fff;
-        box-sizing: border-box;
-        box-shadow: 0 0 20px rgba(100, 100, 100, 0.3); }
-      section .article4 .posLeft img:not(:first-of-type) {
-        display: none; }
-    section .article4 .posRight {
-      display: inline-block;
-      max-width: 540px;
-      margin-top: 1px;
-      margin-left: 10%; }
-      section .article4 .posRight dl {
-        color: #555;
-        text-align: left;
-        border-bottom: 1px solid #aaa; }
-        section .article4 .posRight dl dt {
-          padding: 10px;
-          max-width: 540px;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          cursor: pointer;
-          border-top: 1px solid #aaa;
-          box-sizing: border-box; }
-        section .article4 .posRight dl dt:hover {
-          background-color: #eee; }
-        section .article4 .posRight dl dt.on {
-          background-color: #eee; }
-        section .article4 .posRight dl dd {
-          display: none;
-          padding: 10px;
-          line-height: 20px;
-          font-size: 13px; }
     @media screen and (max-width: 640px) {
       section .article4 h2 {
         font-size: 30px;

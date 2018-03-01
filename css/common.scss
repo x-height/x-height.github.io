@@ -200,37 +200,42 @@ section {
         .content {
             @include flex();
             nav.snb {
-                width: 30%; border-right: 1px solid #ddd;
+                width: 20%; border-right: 1px solid #ddd;
                 ul {
                     border-left: 3px solid #555;
                     li {
                         border-bottom: 1px solid #ddd; cursor: pointer;
-                        h3 { position: relative; padding: 15px; background-color: #f5f5f5; text-align: left; font-size: 0.875em; }
-                        h3.on { background-color: #fff; }
-                        h3.on::after { content: ''; display: block; position: absolute; top: 0; right: -1px; width: 1px; height: 100%; background-color: #fff; }
+                        p { position: relative; padding: 15px; background-color: #f5f5f5; text-align: left; font-size: 0.875em; }
+                        p.on { background-color: #fff; font-weight: 700; }
+                        p.on::after { content: ''; display: block; position: absolute; top: 0; right: -1px; width: 1px; height: 100%; background-color: #fff; }
                     }
                     li:first-child { border-top: 1px solid #ddd; }
                 }
             }
             .contents {
-                padding: 20px 40px;
-                .tech1 {
-                    width: 100%; text-align: left;
+                padding: 15px 40px;
+                .tech1, .tech2, .tech3 {
+                    text-align: left;
                     ul {
                         li {
-                            @include flex(); margin-bottom: 10px;
-                            .thumb { min-width: 140px; height: 140px; margin-right: 20px; background-color: #eee; border: 1px solid #ddd; box-sizing: border-box; }
-                            dt { margin-bottom: 15px; font-weight: 700; }
-                            dd { line-height: 25px; font-size: 0.8125em; }
+                            @include flex(); margin-bottom: 30px;
+                            .thumb { min-width: 110px; height: 110px; margin-right: 20px; background-color: #eee; border: 1px solid #ddd; box-sizing: border-box; }
+                            dl {
+                                dt { margin-bottom: 15px; font-weight: 700; }
+                                dd { line-height: 25px; font-size: 0.8125em; }
+                            }
                         }
+                        li:last-child { margin-bottom: 0; }
                     }
                 }
-                .tech2 {
-                    width: 100%;
-                    
+                .tech2, .tech3 {
+                    display: none;
                 }
             }
-            aside { width: 20%; border-left: 1px solid #ddd; }
+            aside {
+                width: 10%; border-left: 1px solid #ddd; text-align: right;
+                p { padding: 15px 0 5px; font-size: 0.8125em; cursor: pointer; }
+            }
         }
         @media screen and (max-width: 640px) {
             h2 { font-size: 30px; transition: 0.3s; }
@@ -247,19 +252,8 @@ section {
     .article4 {
         background-image: url(../img/bg-wt-001.jpg);
         .posLeft {
-            display: inline-block; max-width: 300px; vertical-align: top;
-            img { max-width: 300px; height: auto; border: 5px solid #fff; box-sizing: border-box; box-shadow: 0 0 20px rgba(100, 100, 100, 0.3); }
-            img:not(:first-of-type) { display: none; }
         }
         .posRight {
-            display: inline-block; max-width: 540px; margin-top: 1px; margin-left: 10%;
-            dl {
-                color: #555; text-align: left; border-bottom: 1px solid #aaa;
-                dt { padding: 10px; max-width: 540px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; cursor: pointer; border-top: 1px solid #aaa; box-sizing: border-box; }
-                dt:hover { background-color: #eee; }
-                dt.on { background-color: #eee; }
-                dd { display: none; padding: 10px; line-height: 20px; font-size: 13px; }
-            }
         }
         @media screen and (max-width: 640px) {
             h2 { font-size: 30px; transition: 0.3s; }

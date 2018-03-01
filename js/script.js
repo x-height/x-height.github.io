@@ -109,14 +109,6 @@ $('.list a').each(function(i) {
 //     }
 // });
 
-$('dt').each(function(i) {
-    $(this).on('click', function() {
-        $(this).toggleClass('on');
-        $('dd').eq(i).slideToggle();
-        $('div.posLeft img').hide();
-        $('div.posLeft img').eq(i).show();
-    });
-});
 
 $('ul.item li button').each(function(i) {
     console.log($('item li button'));
@@ -173,8 +165,17 @@ $('ul.menu li').on('click', function() {
     $(this).addClass('on');
 });
 
-$('article.article3 li h3').eq(0).addClass('on');
-$('article.article3 li').on('click', function() {
-    $('article.article3 li h3').removeClass('on');
+$('article.article3 .snb li p').eq(0).addClass('on');
+$('article.article3 .snb li').on('click', function() {
+    $('article.article3 .snb li p').removeClass('on');
     $(this).children().addClass('on');
 });
+
+$('article.article3 .snb li p').each(function(i) {
+    $('article.article3 .snb li p').eq(i).on('click', function() {
+        $('div.contents > div').hide();
+        $('div.contents > div').eq(i).fadeIn();
+    });
+});
+console.log($('div.contents > div'));
+console.log($('article.article3 .snb li p'));
