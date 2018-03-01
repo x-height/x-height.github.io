@@ -41,12 +41,15 @@ header {
     }
     .fa-bars { position: absolute; top: 40px; right: 0; display: none; font-size: 30px; color: #fff; cursor: pointer; }
     nav.min {
-        position: absolute; top: 0; right: 0; z-index: 20; width: 30%; padding: 25px 0 15px; transform: translateX(100%); background-color: rgba(20, 20, 20, 0.8); transition: 0.7s;
-        li:first-child { margin-right: 20px; text-align: right; color: #fff; cursor: pointer; }
-        li:not(.first):hover { background-color: rgba(20, 20, 20, 0.5); }
-        a { padding: 30px 20px; line-height: 40px; color: #fff; }
-        i { margin-left: 60px; }
-        input { background-color: transparent; }
+        position: absolute; top: 0; right: 0; z-index: 20; width: 100%; height: 100vh; text-align: center; transform: translateX(100%); background-color: rgba(20, 20, 20, 0.8); transition: 0.7s;
+        .close { position: absolute; top: 30px; right: 52px; text-align: right; color: #fff; cursor: pointer; }
+        ul {
+            margin-top: 200px;
+            li:hover { background-color: rgba(20, 20, 20, 0.5); }
+            a { padding: 30px; line-height: 40px; color: #fff; }
+            i { margin-left: 60px; }
+            input { background-color: transparent; }
+        }
     }
     .fa-bars { display: none; }
     @media screen and (max-width: 1024px) {
@@ -65,8 +68,6 @@ header {
             }
             .fa-bars { top: 25px; font-size: 20px; }
         }
-        nav.max { display: none; }
-        nav.min { width: 50%; }
     }
 }
 
