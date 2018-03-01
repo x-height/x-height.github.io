@@ -2,9 +2,7 @@
 
 $primary: #f02a2a;
 $header: #fff;
-@mixin flex() {
-    display: flex; justify-content: space-between;
-}
+@mixin flex() { display: flex; justify-content: space-between; }
 
 body { font-family: 'Roboto', sans-serif; }
 
@@ -150,7 +148,7 @@ section {
                 .bestsellerFirst {
                     text-align: left;
                     h3 { position: relative; z-index: 10; background-color: #eee; padding: 5px; font-size: 17px; }
-                    .best { width: 210px; height: 287px; margin: 5px; background-color: #fff; box-sizing: border-box; transition: 0.3s; }
+                    .best { width: 200px; height: 277px; margin: 5px; background-color: #fff; box-sizing: border-box; transition: 0.3s; }
                 }
             }
             .item {
@@ -239,21 +237,28 @@ section {
         }
         @media screen and (max-width: 640px) {
             h2 { font-size: 30px; transition: 0.3s; }
-            .posLeft { margin: auto; }
-            .posRight {
-                margin-left: 0; width: 300px; margin: auto;
-                dl {
-                    dt { width: 300px; }
-                }
-                dl:first-child { margin-top: 25px; }
-            }
+
         }
     }
     .article4 {
         background-image: url(../img/bg-wt-001.jpg);
-        .posLeft {
-        }
-        .posRight {
+        .wrap {
+            @include flex();
+            nav.snb {
+                width: 20%;
+                ul {
+                    li {
+                        border-bottom: 1px solid #ddd; cursor: pointer;
+                        p { position: relative; padding: 15px; background-color: #fff; text-align: left; font-size: 0.875em; }
+                        p.on { background-color: #444; font-weight: 700; color: #fff; }
+                        // p.on::after { content: ''; display: block; position: absolute; top: 0; right: -1px; width: 1px; height: 100%; background-color: #fff; }
+                    }
+                    li:last-child { border-bottom: 0; }
+                }
+            }
+            .wrapper {
+                width: 80%; padding-left: 40px;
+            }
         }
         @media screen and (max-width: 640px) {
             h2 { font-size: 30px; transition: 0.3s; }

@@ -253,8 +253,8 @@ section {
             padding: 5px;
             font-size: 17px; }
           section .article2 .bestsellerList .itemFisrt .bestsellerFirst .best {
-            width: 210px;
-            height: 287px;
+            width: 200px;
+            height: 277px;
             margin: 5px;
             background-color: #fff;
             box-sizing: border-box;
@@ -412,19 +412,32 @@ section {
     @media screen and (max-width: 640px) {
       section .article3 h2 {
         font-size: 30px;
-        transition: 0.3s; }
-      section .article3 .posLeft {
-        margin: auto; }
-      section .article3 .posRight {
-        margin-left: 0;
-        width: 300px;
-        margin: auto; }
-        section .article3 .posRight dl dt {
-          width: 300px; }
-        section .article3 .posRight dl:first-child {
-          margin-top: 25px; } }
+        transition: 0.3s; } }
   section .article4 {
     background-image: url(../img/bg-wt-001.jpg); }
+    section .article4 .wrap {
+      display: flex;
+      justify-content: space-between; }
+      section .article4 .wrap nav.snb {
+        width: 20%; }
+        section .article4 .wrap nav.snb ul li {
+          border-bottom: 1px solid #ddd;
+          cursor: pointer; }
+          section .article4 .wrap nav.snb ul li p {
+            position: relative;
+            padding: 15px;
+            background-color: #fff;
+            text-align: left;
+            font-size: 0.875em; }
+          section .article4 .wrap nav.snb ul li p.on {
+            background-color: #444;
+            font-weight: 700;
+            color: #fff; }
+        section .article4 .wrap nav.snb ul li:last-child {
+          border-bottom: 0; }
+      section .article4 .wrap .wrapper {
+        width: 80%;
+        padding-left: 40px; }
     @media screen and (max-width: 640px) {
       section .article4 h2 {
         font-size: 30px;

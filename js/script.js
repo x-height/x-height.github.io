@@ -177,5 +177,9 @@ $('article.article3 .snb li p').each(function(i) {
         $('div.contents > div').eq(i).fadeIn();
     });
 });
-console.log($('div.contents > div'));
-console.log($('article.article3 .snb li p'));
+
+$('article.article4 .snb li p').eq(0).addClass('on');
+$('article.article4 .snb li').on('click', function() {
+    $('article.article4 .snb li p').removeClass('on');
+    $(this).children().addClass('on');
+});
