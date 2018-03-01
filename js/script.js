@@ -1,9 +1,13 @@
 var doc = document;
 
-$(".bxSlider").bxSlider({
-    auto : true,
-    pager : false,
-    speed : 700
+$(".slickSlider").slick({
+    autoplay : true,
+    speed : 700,
+    autoplaySpeed : 1000,
+    arrows : true,
+    slidesToShow : 1,
+    slidesToScroll : 1,
+    dots : true
 });
 
 $(".owl-carousel").owlCarousel({
