@@ -1,3 +1,8 @@
 body { background: url(../img/bg.png) no-repeat center; background-size: cover; }
 header { position: relative; height: 700px; text-align: center; }
-header h2 { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 9.375em; font-weight: 700; color: #fff; text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
+header h1 a { color: #fff; }
+header h2 { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 7.5em; font-weight: 700; color: #fff; text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); animation: down 0.7s forwards }
+@keyframes down {
+    0% { top: 30%; opacity: 0; }
+    100% { top: 50%; opacity: 1; }
+}
