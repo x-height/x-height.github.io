@@ -262,7 +262,7 @@ section {
       section .article2 .bestsellerList .item {
         display: flex;
         justify-content: space-between;
-        flex-flow: wrap;
+        flex-wrap: wrap;
         width: 75%; }
         section .article2 .bestsellerList .item .bestseller::before {
           display: block;
@@ -442,7 +442,7 @@ section {
         section .article4 .wrap .wrapper ul {
           display: flex;
           justify-content: space-between;
-          flex-flow: wrap; }
+          flex-wrap: wrap; }
           section .article4 .wrap .wrapper ul li {
             margin-bottom: 30px;
             text-align: left;

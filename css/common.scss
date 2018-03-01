@@ -152,7 +152,7 @@ section {
                 }
             }
             .item {
-                @include flex(); flex-flow: wrap; width: 75%;
+                @include flex(); flex-wrap: wrap; width: 75%;
                 .bestseller::before { display: block; font-size: 40px; color: $primary; transform: translateY(15px); }
                 .bestseller:nth-child(1)::before { content: '02'; }
                 .bestseller:nth-child(2)::before { content: '03'; }
@@ -259,7 +259,7 @@ section {
             .wrapper {
                 width: 80%; padding-left: 40px;
                 ul {
-                    @include flex(); flex-flow: wrap;
+                    @include flex(); flex-wrap: wrap;
                     li {
                         margin-bottom: 30px; text-align: left; padding-bottom: 15px; background-color: #fff;
                         .thumbnail { display: block; min-width: 200px; height: 130px; background-color: #eee; }
