@@ -257,12 +257,12 @@ section {
                 }
             }
             .wrapper {
-                width: 80%; padding-left: 80px;
+                width: 80%; padding-left: 40px;
                 ul {
                     @include flex(); flex-flow: wrap;
                     li {
                         margin-bottom: 30px; text-align: left; padding-bottom: 15px; background-color: #fff;
-                        .thumbnail { display: block; min-width: 250px; height: 150px; background-color: #eee; }
+                        .thumbnail { display: block; min-width: 200px; height: 130px; background-color: #eee; }
                         h3 { margin: 30px 0 10px; padding: 0 15px; font-weight: 700; }
                         p { padding: 0 15px; font-size: 0.8125em; }
                     }

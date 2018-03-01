@@ -438,7 +438,7 @@ section {
           border-bottom: 0; }
       section .article4 .wrap .wrapper {
         width: 80%;
-        padding-left: 80px; }
+        padding-left: 40px; }
         section .article4 .wrap .wrapper ul {
           display: flex;
           justify-content: space-between;
@@ -450,8 +450,8 @@ section {
             background-color: #fff; }
             section .article4 .wrap .wrapper ul li .thumbnail {
               display: block;
-              min-width: 250px;
-              height: 150px;
+              min-width: 200px;
+              height: 130px;
               background-color: #eee; }
             section .article4 .wrap .wrapper ul li h3 {
               margin: 30px 0 10px;
