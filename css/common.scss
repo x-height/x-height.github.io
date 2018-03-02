@@ -13,7 +13,7 @@ header {
     .headerInner { height: 125px; transition: 0.3s; }
     .logo {
         a { line-height: 150px; font-size: 50px; font-weight: 900; color: $header; transition: 0.3s; cursor: pointer; }
-        .small { margin-left: 7px; font-size: 0.4em; font-weight: 400; }
+        .small { margin-left: 7px; font-size: 0.5em; font-weight: 400; }
     }
     nav.max {
         .sign { position: absolute; top: 20px; right: 0; font-size: 13px; color: $header; cursor: pointer; }

@@ -22,7 +22,7 @@ header {
     cursor: pointer; }
   header .logo .small {
     margin-left: 7px;
-    font-size: 0.4em;
+    font-size: 0.5em;
     font-weight: 400; }
   header nav.max .sign {
     position: absolute;
