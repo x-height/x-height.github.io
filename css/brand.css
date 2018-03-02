@@ -1,4 +1,5 @@
 body { background: url(../img/bg.png) no-repeat center; background-size: cover; background-attachment: fixed; }
+
 header { position: relative; height: 100vh; text-align: center; }
 header h1 { margin-top: 30px; }
 header h1 a { font-size: 30px; font-weight: 900; color: #fff; }
@@ -8,6 +9,7 @@ header h2 { position: absolute; top: 50%; left: 50%; transform: translate(-50%, 
     0% { top: 40%; opacity: 0; }
     100% { top: 50%; opacity: 1; }
 }
+
 nav { display: flex; justify-content: center; margin: auto; padding: 50px 100px; background-color: #fff; }
 nav > div { text-align: center; }
 nav > div .img { min-width: 200px; height: 200px; background: url(../img/brand.jpg) no-repeat; }
