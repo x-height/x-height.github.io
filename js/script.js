@@ -179,3 +179,9 @@ $('article.article4 .snb li').on('click', function() {
     $('article.article4 .snb li p').removeClass('on');
     $(this).children().addClass('on');
 });
+
+$(window).on('scroll', function() {
+    if ($(this).scrollTop() > $('#brendHeader').height() / 2) {
+        $('div.brendList').animate({top : '0', opacity : '1'}, 1000);
+    }
+});

@@ -4,14 +4,14 @@ header { position: relative; height: 100vh; text-align: center; }
 header h1 { margin-top: 30px; }
 header h1 a { font-size: 30px; font-weight: 900; color: #fff; }
 header h1 a .small { font-size: 0.5em; font-weight: 400; color: #fff; }
-header h2 { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 7.5em; font-weight: 700; color: #fff; text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); animation: down 1s linear forwards }
+header h2 { position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); font-size: 7.5em; font-weight: 700; color: #fff; text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); animation: down 0.5s forwards }
 @keyframes down {
-    0% { top: 40%; opacity: 0; }
-    100% { top: 50%; opacity: 1; }
+    0% { top: 35%; opacity: 0; }
+    100% { top: 45%; opacity: 1; }
 }
 
 nav { display: flex; justify-content: center; margin: auto; padding: 50px 100px; background-color: #fff; }
-nav > div { text-align: center; }
+nav > div { position: relative; top: 70px; text-align: center; opacity: 0; }
 nav > div .img { min-width: 200px; height: 200px; background: url(../img/brand.jpg) no-repeat; }
 nav > div:nth-child(1) .img { background-position: 0 0; }
 nav > div:nth-child(2) .img { background-position: -200px 0; }
