@@ -180,8 +180,8 @@ $('article.article4 .snb li').on('click', function() {
     $(this).children().addClass('on');
 });
 
-$(window).on('scroll', function() {
-    if ($(this).scrollTop() > ($('#brendHeader').height() / 2) - 100) {
-        $('div.brendList').animate({top : '0', opacity : '1'}, 1000);
-    }
-});
+// $(window).on('scroll', function() {
+//     if ($(this).scrollTop() > ($('#brendHeader').height() / 2) - 100) {
+//         $('div.brendList').animate({top : '0', opacity : '1'}, 1000);
+//     }
+// });
