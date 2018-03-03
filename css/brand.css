@@ -1,4 +1,4 @@
-.container { position: relative; overflow: hidden; }
+.container { position: relative; overflow: hidden; line-height: 1.875em; font-size: 0.875em; }
 
 #bg { width: 6750px; height: 100vh; background-size: 2250px auto; background: #348cb2 url(../img/bg.jpg) repeat-x bottom left; backface-visibility: hidden; opacity: 0; animation: bg 60s linear infinite, overlay 2s forwards; }
 #overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100vh; background-image: url(../img/overlay-pattern.png), url(../img/overlay.svg); background-attachment: fixed, fixed; background-position: top left, center center; background-repeat: repeat, no-repeat; background-size: auto, cover; opacity: 0; animation: overlay 1s 1s forwards; }
@@ -34,9 +34,14 @@ nav > div i.fa-arrow-down:hover { width: 40px; height: 40px; background-color: r
     100% { top: 300px; opacity: 1; }
 }
 
-#article1 { }
-#article1 .imgDotum { background: url(../img/alphabet.png) no-repeat; background-position: 0 0; }
-#article1 .imgBatang { background: url(../img/alphabet.png) no-repeat; background-position: 0 -200px; }
+#article1 { padding: 5%; }
+#article1 .wrap { position: relative; }
+#article1 .wrap .explain { position: absolute; top: 10%; z-index: 5; }
+#article1 .wrap .explain h3 { display: inline-block; margin-bottom: 20px; padding: 2px; font-size: 1.3em; font-weight: 900; border-bottom: 3px solid #333; }
+#article1 .wrap .explain p { width: 25%; padding: 20px; column-count: 2; column-gap: 60px; }
+#article1 .wrap .img { background-image: url(../img/alphabet.png); background-repeat: no-repeat; }
+#article1 .wrap .imgDotum { width: 1000px; height: 200px; background-position: 0 0; }
+#article1 .wrap .imgBatang { width: 1000px; height: 200px; background-position: 0 -200px; }
 
 #article2 { width: 100%; height: 500px; background-color: #aaa; }
 #article3 { width: 100%; height: 500px; background-color: #999; }
