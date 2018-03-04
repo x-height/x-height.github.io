@@ -38,7 +38,7 @@ nav > div i.fa-arrow-down:hover { width: 40px; height: 40px; background-color: r
 .flex { display: flex; justify-content: space-between; }
 section h3 { display: inline-block; margin-bottom: 20px; padding: 2px; font-size: 1.3em; font-weight: 900; border-bottom: 3px solid #333; }
 section p { padding: 20px; }
-#article1, #article2, #article3, #article4, #article5, #article6, #article7, #article8 { padding: 5%; }
+#article1, #article2, #article3, #article4, #article5, #article6 { padding: 5%; }
 
 #article1 .wrap { position: relative; height: 300px; }
 #article1 .wrap .explain { position: absolute; z-index: 5; width: 40%; }
