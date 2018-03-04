@@ -34,31 +34,30 @@ nav > div i.fa-arrow-down:hover { width: 40px; height: 40px; background-color: r
 }
 
 section h2 { margin-bottom: 20px; font-size: 1.7em; font-weight: 900; }
-section h3 { display: inline-block; margin: 20px auto; padding: 2px; font-size: 1.7em; font-weight: 900; border-bottom: 3px solid #8fd7ff; }
+section h3 { display: inline-block; margin: 20px auto; padding: 2px; font-size: 1.7em; font-weight: 900; border-bottom: 3px solid rgba(0,0,0,0.5); }
 section p { padding: 20px; }
 #article1, #article2, #article3, #article4, #article5, #article6 { padding: 5%; padding-bottom: 4%; }
 
 #article1 .wrap { position: relative; height: 300px; }
 #article1 .wrap .explain { width: 40%; }
 #article1 .wrap .dotum { position: absolute; right: 0; }
-#article1 .wrap .explain p { height: 200px; column-count: 2; column-gap: 60px; }
 #article1 .wrap .imgWrap { position: relative; }
 #article1 .wrap .imgWrap .img { background-image: url(../img/alphabet.png); background-repeat: no-repeat; }
 #article1 .wrap .imgWrap .imgDotum { width: 1000px; height: 200px; background-position: 0 0; }
 #article1 .wrap .imgWrap .imgBatang { position: absolute; right: 0; width: 1000px; height: 200px; background-position: 0 -200px; }
 
-#article2 { height: 500px; background: url(../img/concrete.jpg) no-repeat center; background-size: cover; }
+#article2 { height: 700px; background: url(../img/concrete.jpg) no-repeat center; background-size: cover; }
 #article2 .img { background-image: url(../img/alphabet.png); background-repeat: no-repeat; }
 #article2 .imgStructure { width: 1000px; height: 200px; margin: auto; background-position: 0 -400px; }
 
 #article3 p { width: 40%; }
 
-#article4 { padding: 0; background-color: #fff; }
-#article4 h2 { margin-bottom: 0; padding: 5% 0 2% 5%; border-bottom: 1px solid #c5c5bb; }
+#article4 { padding: 0; background-color: #fff; border-bottom: 1px solid rgba(0,0,0,0.1);}
+#article4 h2 { position: relative; z-index: 5; margin-bottom: 0; padding: 5% 0 2% 5%; border-bottom: 1px solid rgba(0,0,0,0.1); }
 #article4 > div { padding: 0 5%; text-align: center; }
-#article4 ul { flex-wrap: wrap; background-color: #f1f1ed; border-width: 0 1px 0 1px; border-style: solid; border-color: #c5c5bb; }
+#article4 ul { flex-wrap: wrap; background-color: #f1f1ed; border-width: 0 1px 0 1px; border-style: solid; border-color: rgba(0,0,0,0.1); }
 #article4 ul li { width: 10%; height: 170px; padding: 10px; box-sizing: border-box; }
-#article4 ul li h4 { margin-top: 40px; padding-bottom: 10px; font-size: 3.5em; font-weight: 700; color: #555; transition: 0.3s; }
+#article4 ul li h4 { margin-top: 40px; padding-bottom: 10px; font-size: 3.5em; font-weight: 700; color: #777; transition: 0.3s; }
 #article4 ul li:hover { background-color: #eaeae5; }
 #article4 ul li:hover h4 { transform: scale(0.7) translateY(-30px); }
 #article4 ul li .detail { display: none; }
