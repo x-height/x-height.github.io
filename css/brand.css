@@ -81,6 +81,42 @@ section p { padding: 20px; }
 #article4 ul li .detail { display: none; }
 #article4 ul li .detail p { position: relative; padding: 0; transform: translateY(-15px); transition: 0.3s; }
 
+#article5 .keyboard { justify-content: flex-start; }
+#article5 .keyboard li { width: 100px; height: 100px; background: url(../img/key.png) no-repeat; transform: scale(0.7); border: 1px solid #ddd; }
+#article5 .keyboard li:nth-child(1) { background-position: 0 0; }
+#article5 .keyboard li:nth-child(2) { background-position: -100px 0; }
+#article5 .keyboard li:nth-child(3) { background-position: -200px 0; }
+#article5 .keyboard li:nth-child(4) { background-position: -300px 0; }
+#article5 .keyboard li:nth-child(5) { background-position: -400px 0; }
+#article5 .keyboard li:nth-child(6) { background-position: -500px 0; }
+#article5 .keyboard li:nth-child(7) { background-position: -600px 0; }
+#article5 .keyboard li:nth-child(8) { background-position: -700px 0; }
+#article5 .keyboard li:nth-child(9) { background-position: -800px 0; }
+#article5 .keyboard li:nth-child(10) { background-position: -900px 0; }
+#article5 .keyboard li:nth-child(11) { background-position: -1000px 0; }
+#article5 .keyboard li:nth-child(12) { background-position: -1100px 0; }
+#article5 .keyboard li:nth-child(13) { background-position: 0 -100px; }
+#article5 .keyboard li:nth-child(14) { background-position: -100px -100px; }
+#article5 .keyboard li:nth-child(15) { background-position: -200px -100px; }
+#article5 .keyboard li:nth-child(16) { background-position: -300px -100px; }
+#article5 .keyboard li:nth-child(17) { background-position: -400px -100px; }
+#article5 .keyboard li:nth-child(18) { background-position: -500px -100px; }
+#article5 .keyboard li:nth-child(19) { background-position: -600px -100px; }
+#article5 .keyboard li:nth-child(20) { background-position: -700px -100px; }
+#article5 .keyboard li:nth-child(21) { background-position: -800px -100px; }
+#article5 .keyboard li:nth-child(22) { background-position: -900px -100px; }
+#article5 .keyboard li:nth-child(23) { background-position: -1000px -100px; }
+#article5 .keyboard li:nth-child(24) { background-position: -1100px -100px; }
+#article5 .keyboard li:nth-child(25) { background-position: 0 -200px; }
+#article5 .keyboard li:nth-child(26) { background-position: -100px -200px; }
+#article5 .keyboard li:nth-child(27) { background-position: -200px -200px; }
+#article5 .keyboard li:nth-child(28) { background-position: -300px -200px; }
+#article5 .keyboard li:nth-child(29) { background-position: -400px -200px; }
+#article5 .keyboard li:nth-child(30) { background-position: -500px -200px; }
+#article5 .keyboard li:nth-child(31) { background-position: -600px -200px; }
+#article5 .keyboard li:nth-child(32) { background-position: -700px -200px; }
+#article5 .keyboard li:nth-child(33) { background-position: -800px -200px; }
+#article5 .keyboard li:nth-child(34) { background-position: -900px -200px; }
+#article5 .keyboard li:nth-child(35) { background-position: -1000px -200px; }
 
-
-.flex { display: flex; justify-content: space-between; }
+.flex { display: flex; justify-content: space-between; flex-wrap: wrap; }
