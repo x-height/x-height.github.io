@@ -46,8 +46,9 @@ section h3 { display: inline-block; margin: 20px auto; padding: 2px; font-size: 
 section p { padding: 20px; }
 #article1, #article2, #article3, #article4, #article5, #article6 { padding: 5%; padding-bottom: 4%; }
 
-#article1 .wrap { position: relative; height: 300px; }
+#article1 .wrap { height: 300px; }
 #article1 .wrap .explain { position: relative; z-index: 10; width: 40%; }
+/* #article1 .wrap .batang { position: absolute; left: 0; } */
 #article1 .wrap .dotum { position: absolute; right: 0; }
 #article1 .wrap .imgWrap { position: relative; }
 #article1 .wrap .imgWrap .img { position: relative; background-image: url(../img/alphabet.png); background-repeat: no-repeat; opacity: 0; }
