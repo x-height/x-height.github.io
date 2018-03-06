@@ -71,6 +71,7 @@ section p { padding: 20px; font-size: 1em; }
 #article2 .img { background-image: url(../img/alphabet.png); background-repeat: no-repeat; background-position: center center; }
 #article2 .imgStructure { width: 1000px; height: 200px; margin: auto; background-position: 0 -400px; }
 
+#article3 { background: url(../img/bg-grid.png) center center; }
 
 #article4 { padding: 0; background-color: #fff; border-bottom: 1px solid rgba(0,0,0,0.1);}
 #article4 > div { padding: 0 5%; text-align: center; background-color: #fafafa; }
