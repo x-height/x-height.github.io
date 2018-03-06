@@ -192,7 +192,7 @@ $('#article4 ul li').on({
 $(window).on('scroll', function() {
     if ($(this).scrollTop() >= $('#brandHeader').height() / 2) {
         $('#article1 .imgBatang6').animate({opacity : 1}, 1000);
-        $('#article1 .imgBatang5').animate({right : 200, opacity : 1}, 1000);
+        $('#article1 .imgWrap .imgBatang5').animate({right : 200, opacity : 1}, 1000);
         $('#article1 .imgBatang4').animate({right : 400, opacity : 1}, 1000);
         $('#article1 .imgBatang3').animate({right : 600, opacity : 1}, 1000);
         $('#article1 .imgBatang2').animate({right : 800, opacity : 1}, 1000);
@@ -205,4 +205,5 @@ $(window).on('scroll', function() {
         $('#article1 .imgDotum2').animate({left : 200, opacity : 1}, 1000);
         $('#article1 .imgDotum1').animate({opacity : 1}, 1000);
     }
+    console.log($('#brandHeader').height() / 2);
 });
