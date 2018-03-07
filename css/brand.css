@@ -54,7 +54,7 @@ section p { padding: 20px; font-size: 1em; }
 #article1 .wrap .batang { left: 15%; background-position: -1200px 0; }
 #article1 .wrap .dotum { right: 15%; background-position: -1510px 0px; }
 #article1 .wrap .imgWrap { position: relative; }
-#article1 .wrap .imgWrap .img { position: absolute; width: 200px; height: 200px; opacity: 0.7; }
+#article1 .wrap .imgWrap .img { position: absolute; width: 200px; height: 200px; opacity: 0; }
 #article1 .wrap .imgWrap .imgBatang1 { right: 0; background-position: 0 -200px; transform: translateY(60%); }
 #article1 .wrap .imgWrap .imgBatang2 { right: 0; background-position: -200px -200px; transform: translateY(60%); }
 #article1 .wrap .imgWrap .imgBatang3 { right: 0; background-position: -400px -200px; transform: translateY(60%); }
