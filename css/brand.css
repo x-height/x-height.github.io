@@ -55,14 +55,19 @@ section p { padding: 20px; font-size: 1em; }
 #article1 .wrap .imgWrap .imgDotum5 { background-position: -800px -400px; transform: translateY(120%); }
 #article1 .wrap .imgWrap .imgDotum6 { background-position: -1000px -400px; transform: translateY(120%); }
 
-#article2 { position: relative; height: 700px; background: url(../img/concrete.jpg) no-repeat center center; background-size: cover; }
-#article2 .img { position: absolute; left: 50%; transform: translateX(-50%); width: 1200px; height: 500px; background-position: 0 -600px; }
-#article2 .bar { width: 0; margin: auto; border-bottom: 1px solid #333; transform: translateY(500px); }
-#article2 .bar.on { animation: extend 0.5s 2s forwards; }
-#article2 .comment { width: 70%; margin: auto; columns: 2; transform: translateY(550px); }
+#article2 { position: relative; height: 700px; padding-bottom: 7%; background: url(../img/concrete.jpg) no-repeat center center; background-size: cover; }
+#article2 .img { position: relative; left: 50%; transform: translateX(-50%); width: 1200px; height: 400px; background-position: 0 -600px; opacity: 0; }
+#article2 .bar { width: 0; margin: auto; border-bottom: 1px solid #333; }
+#article2 .bar.on { animation: extend 1s 1s forwards; }
+#article2 .comment { position: relative; width: 70%; margin: 50px auto; columns: 2; opacity: 0; }
+#article2 .comment.on { animation: comment 1s 2s forwards; }
 @keyframes extend {
     0% { width: 0; opacity: 0; }
-    100% { width: 60%; opacity: 1; }
+    100% { width: 70%; opacity: 1; }
+}
+@keyframes comment {
+    0% { top: 5em; opacity: 0; }
+    100% { top: 0; opacity: 1; }
 }
 
 #article3 { background: url(../img/bg-grid.png) center center; }
