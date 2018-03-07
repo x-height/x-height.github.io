@@ -57,8 +57,9 @@ section p { padding: 20px; font-size: 1em; }
 
 #article2 { position: relative; height: 700px; background: url(../img/concrete.jpg) no-repeat center center; background-size: cover; }
 #article2 .img { position: absolute; left: 50%; transform: translateX(-50%); width: 1200px; height: 500px; background-position: 0 -600px; }
-#article2 .bar { width: 0; margin: auto; border-bottom: 2px solid #333; transform: translateY(500px); animation: extend 0.5s 2s forwards; }
-#article2 .bar {  }
+#article2 .bar { width: 0; margin: auto; border-bottom: 2px solid #333; transform: translateY(500px); }
+#article2 .bar.on { animation: extend 0.5s 2s forwards; }
+#article2 .comment { width: 70%; margin: auto; columns: 2; }
 @keyframes extend {
     0% { width: 0; opacity: 0; }
     100% { width: 60%; opacity: 1; }
