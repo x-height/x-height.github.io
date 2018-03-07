@@ -4,19 +4,6 @@ body { font-family: 'Questrial', sans-serif; }
 a, i { color: #555; }
 .img { background: url(../img/img.png) no-repeat; }
 
-/* #bg { width: 100%; height: 100vh; } */
-/* #bg { width: 6750px; height: 100vh; background-size: 2250px auto; background: #348cb2 url(../img/bg.jpg) repeat-x bottom left; backface-visibility: hidden; opacity: 0; animation: bg 60s linear infinite, overlay 2s forwards; } */
-/* #overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100vh; background-image: url(../img/overlay-pattern.png), url(../img/overlay.svg); background-attachment: fixed, fixed; background-position: top left, center center; background-repeat: repeat, no-repeat; background-size: auto, cover; opacity: 0; animation: overlay 1s 1s forwards; } */
-/* @keyframes bg {
-    0% { transform: translate3d(0, 0, 0); }
-    100% { transform: translate3d(-2250px, 0, 0); }
-}
-@keyframes overlay {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-} */
-
-
 header { width: 100%; height: 100vh; text-align: center; }
 header > div { position: absolute; top: 30px; font-size: 1.5em; }
 header .home { left: 30px; }
@@ -70,7 +57,12 @@ section p { padding: 20px; font-size: 1em; }
 
 #article2 { position: relative; height: 700px; background: url(../img/concrete.jpg) no-repeat center center; background-size: cover; }
 #article2 .img { position: absolute; left: 50%; transform: translateX(-50%); width: 1200px; height: 500px; background-position: 0 -600px; }
-#article2 .bar { width: 40%; margin: auto; border-bottom: 2px solid #333; transform: translateY(500px); }
+#article2 .bar { width: 0; margin: auto; border-bottom: 2px solid #333; transform: translateY(500px); animation: extend 0.5s 2s forwards; }
+#article2 .bar {  }
+@keyframes extend {
+    0% { width: 0; opacity: 0; }
+    100% { width: 60%; opacity: 1; }
+}
 
 #article3 { background: url(../img/bg-grid.png) center center; }
 #article3 > div { display: flex; justify-content: center; }
