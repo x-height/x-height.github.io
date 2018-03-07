@@ -191,19 +191,19 @@ $('#article4 ul li').on({
 
 $(window).on('scroll', function() {
     if ($(this).scrollTop() >= $('#brandHeader').height() / 2) {
-        $('#article1 .imgBatang6').animate({opacity : 1}, 1000);
-        $('#article1 .imgBatang5').animate({right : 200, opacity : 1}, 1000);
-        $('#article1 .imgBatang4').animate({right : 400, opacity : 1}, 1000);
-        $('#article1 .imgBatang3').animate({right : 100, opacity : 1}, 1000);
-        $('#article1 .imgBatang2').animate({right : 300, opacity : 1}, 1000);
-        $('#article1 .imgBatang1').animate({right : 500, opacity : 1}, 1000);
+        $('#article1 .imgBatang6').animate({opacity : 0.8}, 1000);
+        $('#article1 .imgBatang5').animate({right : 200, opacity : 0.8}, 1000);
+        $('#article1 .imgBatang4').animate({right : 400, opacity : 0.8}, 1000);
+        $('#article1 .imgBatang3').animate({right : 100, opacity : 0.8}, 1000);
+        $('#article1 .imgBatang2').animate({right : 300, opacity : 0.8}, 1000);
+        $('#article1 .imgBatang1').animate({right : 500, opacity : 0.8}, 1000);
 
-        $('#article1 .imgDotum6').animate({left : 500, opacity : 1}, 1000);
-        $('#article1 .imgDotum5').animate({left : 300, opacity : 1}, 1000);
-        $('#article1 .imgDotum4').animate({left : 100, opacity : 1}, 1000);
-        $('#article1 .imgDotum3').animate({left : 400, opacity : 1}, 1000);
-        $('#article1 .imgDotum2').animate({left : 200, opacity : 1}, 1000);
-        $('#article1 .imgDotum1').animate({opacity : 1}, 1000);
+        $('#article1 .imgDotum6').animate({left : 500, opacity : 0.8}, 1000);
+        $('#article1 .imgDotum5').animate({left : 300, opacity : 0.8}, 1000);
+        $('#article1 .imgDotum4').animate({left : 100, opacity : 0.8}, 1000);
+        $('#article1 .imgDotum3').animate({left : 400, opacity : 0.8}, 1000);
+        $('#article1 .imgDotum2').animate({left : 200, opacity : 0.8}, 1000);
+        $('#article1 .imgDotum1').animate({opacity : 0.8}, 1000);
     }
 });
 console.log($('#brandHeader'));
