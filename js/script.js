@@ -206,6 +206,10 @@ $(window).on('scroll', function() {
         $('#article1 .imgDotum1').animate({opacity : 0.8}, 1000);
     }
 });
-console.log($('#brandHeader'));
-console.log($('#brandHeader').height());
-console.log($('#brandHeader').height() / 2);
+
+$(window).on('scroll', function() {
+    if ($(this).scrollTop() >= $('#article1').height()) {
+        $('#article2 div.bar').addClass('on');
+    }
+});
+console.log($('#article1').height());
