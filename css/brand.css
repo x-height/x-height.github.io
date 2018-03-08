@@ -59,7 +59,7 @@ section p { padding: 20px; font-size: 1em; }
 #article2 .img { position: relative; left: 50%; transform: translateX(-50%); width: 1200px; height: 400px; background-position: 0 -600px; opacity: 0; }
 #article2 .bar { width: 0; margin: auto; border-bottom: 1px solid #333; }
 #article2 .bar.on { animation: extend 1s 1s forwards; }
-#article2 .comment { position: relative; width: 80%; margin: 50px auto; columns: 2; opacity: 0; }
+#article2 .comment { position: relative; width: 80%; margin: 50px auto; columns: 2; column-gap: 0; opacity: 0; }
 #article2 .comment.on { animation: comment 1s 2s forwards; }
 @keyframes extend {
     0% { width: 0; opacity: 0; }
