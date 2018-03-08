@@ -208,10 +208,11 @@ $(window).on('scroll', function() {
 });
 
 $(window).on('scroll', function() {
-    if ($(this).scrollTop() >= $('#article1').height()) {
+    if ($(this).scrollTop() >= $('#article1').height() + 200) {
         $('#article2 div.img').animate({opacity : 1}, 1000);
         $('#article2 div.bar').addClass('on');
         $('#article2 ul.comment').addClass('on');
     }
 });
 console.log($('#article1').height());
+console.log($('#article1').height() + 200);
