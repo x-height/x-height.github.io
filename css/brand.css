@@ -69,6 +69,9 @@ section p { padding: 20px; font-size: 1em; }
     0% { top: 5em; opacity: 0; }
     100% { top: 0; opacity: 1; }
 }
+@media screen and (max-width: 1024px) {
+    #article2 .comment { width: 100%; }
+}
 
 #article3 { background: url(../img/bg-grid.png) center center; }
 #article3 > div { display: flex; justify-content: center; }
